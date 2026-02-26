@@ -27,7 +27,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/default/production/stepper.o
  .bss           0x0000000000000000        0x0 build/default/production/stepper.o
  .text.StepperDir
-                0x0000000000000000        0x8 build/default/production/stepper.o
+                0x0000000000000000       0x14 build/default/production/stepper.o
  .text          0x0000000000000000        0x0 build/default/production/RTC.o
  .data          0x0000000000000000        0x0 build/default/production/RTC.o
  .bss           0x0000000000000000        0x0 build/default/production/RTC.o
@@ -35,23 +35,36 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/ADC.o
  .data          0x0000000000000000        0x0 build/default/production/ADC.o
  .bss           0x0000000000000000        0x0 build/default/production/ADC.o
- .text.ADC0_init
-                0x0000000000000000       0x28 build/default/production/ADC.o
  .text.ADC0_Read
                 0x0000000000000000       0x2e build/default/production/ADC.o
- .debug_info    0x0000000000000000      0xa99 build/default/production/ADC.o
- .debug_abbrev  0x0000000000000000      0x113 build/default/production/ADC.o
- .debug_loc     0x0000000000000000       0x2d build/default/production/ADC.o
- .debug_aranges
-                0x0000000000000000       0x28 build/default/production/ADC.o
- .debug_ranges  0x0000000000000000       0x18 build/default/production/ADC.o
- .debug_line    0x0000000000000000      0x162 build/default/production/ADC.o
- .debug_str     0x0000000000000000        0x0 build/default/production/ADC.o
- .comment       0x0000000000000000       0x30 build/default/production/ADC.o
- .debug_frame   0x0000000000000000       0x34 build/default/production/ADC.o
  .text          0x0000000000000000        0x0 build/default/production/CLK.o
  .data          0x0000000000000000        0x0 build/default/production/CLK.o
  .bss           0x0000000000000000        0x0 build/default/production/CLK.o
+ .text          0x0000000000000000        0x0 build/default/production/LM35.o
+ .data          0x0000000000000000        0x0 build/default/production/LM35.o
+ .bss           0x0000000000000000        0x0 build/default/production/LM35.o
+ .debug_info    0x0000000000000000      0x25b build/default/production/LM35.o
+ .debug_abbrev  0x0000000000000000       0x1b build/default/production/LM35.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/default/production/LM35.o
+ .debug_line    0x0000000000000000       0x1a build/default/production/LM35.o
+ .debug_str     0x0000000000000000        0x0 build/default/production/LM35.o
+ .comment       0x0000000000000000       0x30 build/default/production/LM35.o
+ .text          0x0000000000000000        0x0 build/default/production/mt6701.o
+ .data          0x0000000000000000        0x0 build/default/production/mt6701.o
+ .bss           0x0000000000000000        0x0 build/default/production/mt6701.o
+ .text.MT6701_Read
+                0x0000000000000000        0x8 build/default/production/mt6701.o
+ .bss.MT6701    0x0000000000000000        0x4 build/default/production/mt6701.o
+ .debug_info    0x0000000000000000      0x445 build/default/production/mt6701.o
+ .debug_abbrev  0x0000000000000000       0xb8 build/default/production/mt6701.o
+ .debug_aranges
+                0x0000000000000000       0x20 build/default/production/mt6701.o
+ .debug_ranges  0x0000000000000000       0x10 build/default/production/mt6701.o
+ .debug_line    0x0000000000000000      0x11e build/default/production/mt6701.o
+ .debug_str     0x0000000000000000        0xa build/default/production/mt6701.o
+ .comment       0x0000000000000000       0x30 build/default/production/mt6701.o
+ .debug_frame   0x0000000000000000       0x24 build/default/production/mt6701.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
@@ -143,6 +156,8 @@ LOAD build/default/production/stepper.o
 LOAD build/default/production/RTC.o
 LOAD build/default/production/ADC.o
 LOAD build/default/production/CLK.o
+LOAD build/default/production/LM35.o
+LOAD build/default/production/mt6701.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
 END GROUP
@@ -405,6 +420,7 @@ END GROUP
  .comment       0x000000000000002f       0x30 build/default/production/GPIO.o
  .comment       0x000000000000002f       0x30 build/default/production/stepper.o
  .comment       0x000000000000002f       0x30 build/default/production/RTC.o
+ .comment       0x000000000000002f       0x30 build/default/production/ADC.o
  .comment       0x000000000000002f       0x30 build/default/production/CLK.o
  .comment       0x000000000000002f       0x2c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
                                          0x2d (size before relaxing)
@@ -445,7 +461,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000       0xd8
+.debug_aranges  0x0000000000000000      0x100
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 build/default/production/main.o
@@ -456,64 +472,72 @@ END GROUP
  .debug_aranges
                 0x0000000000000070       0x28 build/default/production/RTC.o
  .debug_aranges
-                0x0000000000000098       0x20 build/default/production/CLK.o
+                0x0000000000000098       0x28 build/default/production/ADC.o
  .debug_aranges
-                0x00000000000000b8       0x20 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+                0x00000000000000c0       0x20 build/default/production/CLK.o
+ .debug_aranges
+                0x00000000000000e0       0x20 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x3b7a
+.debug_info     0x0000000000000000     0x4628
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x1b84 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_info    0x0000000000001b84      0x42d build/default/production/main.o
- .debug_info    0x0000000000001fb1      0x500 build/default/production/GPIO.o
- .debug_info    0x00000000000024b1      0x86d build/default/production/stepper.o
- .debug_info    0x0000000000002d1e      0x79c build/default/production/RTC.o
- .debug_info    0x00000000000034ba      0x613 build/default/production/CLK.o
- .debug_info    0x0000000000003acd       0xad C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_info    0x0000000000001b84      0x443 build/default/production/main.o
+ .debug_info    0x0000000000001fc7      0x500 build/default/production/GPIO.o
+ .debug_info    0x00000000000024c7      0x86c build/default/production/stepper.o
+ .debug_info    0x0000000000002d33      0x79c build/default/production/RTC.o
+ .debug_info    0x00000000000034cf      0xa99 build/default/production/ADC.o
+ .debug_info    0x0000000000003f68      0x613 build/default/production/CLK.o
+ .debug_info    0x000000000000457b       0xad C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_abbrev   0x0000000000000000     0x1eb4
+.debug_abbrev   0x0000000000000000     0x1fdf
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x1a0e C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
  .debug_abbrev  0x0000000000001a0e       0xd1 build/default/production/main.o
  .debug_abbrev  0x0000000000001adf       0xa2 build/default/production/GPIO.o
- .debug_abbrev  0x0000000000001b81      0x143 build/default/production/stepper.o
- .debug_abbrev  0x0000000000001cc4      0x102 build/default/production/RTC.o
- .debug_abbrev  0x0000000000001dc6       0xda build/default/production/CLK.o
- .debug_abbrev  0x0000000000001ea0       0x14 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_abbrev  0x0000000000001b81      0x15b build/default/production/stepper.o
+ .debug_abbrev  0x0000000000001cdc      0x102 build/default/production/RTC.o
+ .debug_abbrev  0x0000000000001dde      0x113 build/default/production/ADC.o
+ .debug_abbrev  0x0000000000001ef1       0xda build/default/production/CLK.o
+ .debug_abbrev  0x0000000000001fcb       0x14 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_line     0x0000000000000000      0x7c3
+.debug_line     0x0000000000000000      0x937
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x14b C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_line    0x000000000000014b       0xc7 build/default/production/main.o
- .debug_line    0x0000000000000212      0x111 build/default/production/GPIO.o
- .debug_line    0x0000000000000323      0x1ad build/default/production/stepper.o
- .debug_line    0x00000000000004d0      0x13c build/default/production/RTC.o
- .debug_line    0x000000000000060c      0x150 build/default/production/CLK.o
- .debug_line    0x000000000000075c       0x67 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_line    0x000000000000014b       0xcd build/default/production/main.o
+ .debug_line    0x0000000000000218      0x111 build/default/production/GPIO.o
+ .debug_line    0x0000000000000329      0x1b9 build/default/production/stepper.o
+ .debug_line    0x00000000000004e2      0x13c build/default/production/RTC.o
+ .debug_line    0x000000000000061e      0x162 build/default/production/ADC.o
+ .debug_line    0x0000000000000780      0x150 build/default/production/CLK.o
+ .debug_line    0x00000000000008d0       0x67 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_frame    0x0000000000000000       0xfc
+.debug_frame    0x0000000000000000      0x130
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x24 build/default/production/main.o
  .debug_frame   0x0000000000000024       0x24 build/default/production/GPIO.o
  .debug_frame   0x0000000000000048       0x50 build/default/production/stepper.o
  .debug_frame   0x0000000000000098       0x40 build/default/production/RTC.o
- .debug_frame   0x00000000000000d8       0x24 build/default/production/CLK.o
+ .debug_frame   0x00000000000000d8       0x34 build/default/production/ADC.o
+ .debug_frame   0x000000000000010c       0x24 build/default/production/CLK.o
 
-.debug_str      0x0000000000000000      0xc34
+.debug_str      0x0000000000000000      0xc3e
  *(.debug_str)
  .debug_str     0x0000000000000000      0xbcd C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_str     0x0000000000000bcd       0x3b build/default/production/main.o
- .debug_str     0x0000000000000c08        0x0 build/default/production/GPIO.o
- .debug_str     0x0000000000000c08       0x1f build/default/production/stepper.o
- .debug_str     0x0000000000000c27        0x0 build/default/production/RTC.o
- .debug_str     0x0000000000000c27        0xd build/default/production/CLK.o
+ .debug_str     0x0000000000000bcd       0x45 build/default/production/main.o
+ .debug_str     0x0000000000000c12        0x0 build/default/production/GPIO.o
+ .debug_str     0x0000000000000c12       0x1f build/default/production/stepper.o
+ .debug_str     0x0000000000000c31        0x0 build/default/production/RTC.o
+ .debug_str     0x0000000000000c31        0x0 build/default/production/ADC.o
+ .debug_str     0x0000000000000c31        0xd build/default/production/CLK.o
 
-.debug_loc      0x0000000000000000       0x87
+.debug_loc      0x0000000000000000       0xcd
  *(.debug_loc)
- .debug_loc     0x0000000000000000       0x5b build/default/production/stepper.o
- .debug_loc     0x000000000000005b       0x2c build/default/production/RTC.o
+ .debug_loc     0x0000000000000000       0x74 build/default/production/stepper.o
+ .debug_loc     0x0000000000000074       0x2c build/default/production/RTC.o
+ .debug_loc     0x00000000000000a0       0x2d build/default/production/ADC.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -533,13 +557,14 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000       0x68
+.debug_ranges   0x0000000000000000       0x80
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x10 build/default/production/main.o
  .debug_ranges  0x0000000000000010       0x10 build/default/production/GPIO.o
  .debug_ranges  0x0000000000000020       0x20 build/default/production/stepper.o
  .debug_ranges  0x0000000000000040       0x18 build/default/production/RTC.o
- .debug_ranges  0x0000000000000058       0x10 build/default/production/CLK.o
+ .debug_ranges  0x0000000000000058       0x18 build/default/production/ADC.o
+ .debug_ranges  0x0000000000000070       0x10 build/default/production/CLK.o
 
 .debug_macro
  *(.debug_macro)
@@ -568,91 +593,97 @@ LOAD data_init
                 0x00000000000001a2       0x44 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
                 0x00000000000001a2                __udivmodsi4
 
-.text.main      0x00000000000001e6       0x32
- .text.main     0x00000000000001e6       0x32 build/default/production/main.o
+.text.main      0x00000000000001e6       0x36
+ .text.main     0x00000000000001e6       0x36 build/default/production/main.o
                 0x00000000000001e6                main
 
 .text.GPIO_init
-                0x0000000000000218       0x28
+                0x000000000000021c       0x28
  .text.GPIO_init
-                0x0000000000000218       0x28 build/default/production/GPIO.o
-                0x0000000000000218                GPIO_init
+                0x000000000000021c       0x28 build/default/production/GPIO.o
+                0x000000000000021c                GPIO_init
+
+.text.ADC0_init
+                0x0000000000000244       0x28
+ .text.ADC0_init
+                0x0000000000000244       0x28 build/default/production/ADC.o
+                0x0000000000000244                ADC0_init
 
 .text.CLOCK_INHF_clock_init
-                0x0000000000000240       0x20
+                0x000000000000026c       0x20
  .text.CLOCK_INHF_clock_init
-                0x0000000000000240       0x20 build/default/production/CLK.o
-                0x0000000000000240                CLOCK_INHF_clock_init
+                0x000000000000026c       0x20 build/default/production/CLK.o
+                0x000000000000026c                CLOCK_INHF_clock_init
 
-.text.exit      0x0000000000000260       0x16
- .text.exit     0x0000000000000260       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x0000000000000260                exit
+.text.exit      0x000000000000028c       0x16
+ .text.exit     0x000000000000028c       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x000000000000028c                exit
 
 .text.Stepper_enable
-                0x0000000000000276       0x14
+                0x00000000000002a2       0x14
  .text.Stepper_enable
-                0x0000000000000276       0x14 build/default/production/stepper.o
-                0x0000000000000276                Stepper_enable
+                0x00000000000002a2       0x14 build/default/production/stepper.o
+                0x00000000000002a2                Stepper_enable
 
-.text.avrlibc   0x000000000000028a        0xc
- .text.avrlibc  0x000000000000028a        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
-                0x000000000000028a                ccp_write_io
+.text.avrlibc   0x00000000000002b6        0xc
+ .text.avrlibc  0x00000000000002b6        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+                0x00000000000002b6                ccp_write_io
 
-.text           0x0000000000000296        0x4
- .text          0x0000000000000296        0x4 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
-                0x0000000000000296                __vector_22
-                0x0000000000000296                __vector_28
-                0x0000000000000296                __vector_1
-                0x0000000000000296                __vector_24
-                0x0000000000000296                __vector_12
-                0x0000000000000296                __bad_interrupt
-                0x0000000000000296                __vector_6
-                0x0000000000000296                __vector_3
-                0x0000000000000296                __vector_23
-                0x0000000000000296                __vector_25
-                0x0000000000000296                __vector_11
-                0x0000000000000296                __vector_13
-                0x0000000000000296                __vector_17
-                0x0000000000000296                __vector_19
-                0x0000000000000296                __vector_7
-                0x0000000000000296                __vector_27
-                0x0000000000000296                __vector_5
-                0x0000000000000296                __vector_4
-                0x0000000000000296                __vector_9
-                0x0000000000000296                __vector_2
-                0x0000000000000296                __vector_21
-                0x0000000000000296                __vector_15
-                0x0000000000000296                __vector_29
-                0x0000000000000296                __vector_8
-                0x0000000000000296                __vector_26
-                0x0000000000000296                __vector_14
-                0x0000000000000296                __vector_10
-                0x0000000000000296                __vector_16
-                0x0000000000000296                __vector_18
-                0x0000000000000296                __vector_20
+.text           0x00000000000002c2        0x4
+ .text          0x00000000000002c2        0x4 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
+                0x00000000000002c2                __vector_22
+                0x00000000000002c2                __vector_28
+                0x00000000000002c2                __vector_1
+                0x00000000000002c2                __vector_24
+                0x00000000000002c2                __vector_12
+                0x00000000000002c2                __bad_interrupt
+                0x00000000000002c2                __vector_6
+                0x00000000000002c2                __vector_3
+                0x00000000000002c2                __vector_23
+                0x00000000000002c2                __vector_25
+                0x00000000000002c2                __vector_11
+                0x00000000000002c2                __vector_13
+                0x00000000000002c2                __vector_17
+                0x00000000000002c2                __vector_19
+                0x00000000000002c2                __vector_7
+                0x00000000000002c2                __vector_27
+                0x00000000000002c2                __vector_5
+                0x00000000000002c2                __vector_4
+                0x00000000000002c2                __vector_9
+                0x00000000000002c2                __vector_2
+                0x00000000000002c2                __vector_21
+                0x00000000000002c2                __vector_15
+                0x00000000000002c2                __vector_29
+                0x00000000000002c2                __vector_8
+                0x00000000000002c2                __vector_26
+                0x00000000000002c2                __vector_14
+                0x00000000000002c2                __vector_10
+                0x00000000000002c2                __vector_16
+                0x00000000000002c2                __vector_18
+                0x00000000000002c2                __vector_20
 
-.text._Exit     0x000000000000029a        0x4
- .text._Exit    0x000000000000029a        0x4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
-                0x000000000000029a                _Exit
+.text._Exit     0x00000000000002c6        0x4
+ .text._Exit    0x00000000000002c6        0x4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
+                0x00000000000002c6                _Exit
 
 .text.__dummy_fini
-                0x000000000000029e        0x2
+                0x00000000000002ca        0x2
  .text.__dummy_fini
-                0x000000000000029e        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x000000000000029e                _fini
+                0x00000000000002ca        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x00000000000002ca                _fini
 
 .text.__dummy_funcs_on_exit
-                0x00000000000002a0        0x2
+                0x00000000000002cc        0x2
  .text.__dummy_funcs_on_exit
-                0x00000000000002a0        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x00000000000002a0                __funcs_on_exit
+                0x00000000000002cc        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x00000000000002cc                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x00000000000002a2        0x2
+                0x00000000000002ce        0x2
  .text.__dummy_simulator_exit
-                0x00000000000002a2        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x00000000000002a2                __simulator_exit
+                0x00000000000002ce        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x00000000000002ce                __simulator_exit
 
-.data.Motor     0x0000000000803800        0x8 load address 0x00000000000002a4
+.data.Motor     0x0000000000803800        0x8 load address 0x00000000000002d0
  .data.Motor    0x0000000000803800        0x8 build/default/production/stepper.o
                 0x0000000000803800                Motor

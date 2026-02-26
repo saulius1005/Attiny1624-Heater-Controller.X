@@ -1,4 +1,4 @@
-build/default/production/CLK.o.d build/default/production/CLK.o: CLK.c \
+build/default/debug/LM35.o.d build/default/debug/LM35.o: LM35.c \
  settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \

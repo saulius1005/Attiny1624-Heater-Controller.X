@@ -2,20 +2,20 @@
 #include "stepeprVar.h"
 
 void Stepper_enable(stepper_state_t en){
-    if(en)
-        PORTA.OUTCLR = PIN3_bm;
+    if(en == ON)
+        PORTA.OUTCLR = PIN3_bm; //inverted enable- low meaning enabled
     else
         PORTA.OUTSET = PIN3_bm;
 }
 
 void StepperDir(stepper_state_t dir){
-    if(ON)
+    if(dir == CW)
         PORTA.OUTSET = PIN1_bm;		//1-CW
     else
         PORTA.OUTCLR = PIN1_bm;		//0-CCW
 }
 
-void StepperStep(void)
+void StepperStep()
 {
     if(Motor.steps == 0)
         return;

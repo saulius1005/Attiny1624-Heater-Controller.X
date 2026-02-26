@@ -11,6 +11,7 @@ int main() {
 
     CLOCK_INHF_clock_init();
     GPIO_init();
+    ADC0_init();
     Stepper_enable(ON);
     Motor.steps = 6400; //full circle
     
@@ -19,6 +20,7 @@ int main() {
         if(Motor.steps == 0){
             Stepper_enable(OFF);
         }
+        MT6701.ADC_Value = MT6701_Read();
     }
 }
 

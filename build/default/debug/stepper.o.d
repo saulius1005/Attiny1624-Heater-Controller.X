@@ -24,7 +24,7 @@ build/default/debug/stepper.o.d build/default/debug/stepper.o: stepper.c \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- stepper.h stepeprVar.h
+ stepper.h LM35.h mt6701.h stepeprVar.h
 
 settings.h:
 
@@ -81,5 +81,9 @@ CLK.h:
 ADC.h:
 
 stepper.h:
+
+LM35.h:
+
+mt6701.h:
 
 stepeprVar.h:

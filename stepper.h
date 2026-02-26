@@ -37,12 +37,12 @@ extern "C" {
     
     typedef enum {
         OFF = 0,
-        ON  = 1
+        ON
     } stepper_state_t;
 
     typedef enum {
         CCW = 0,
-        CW  = 1
+        CW
     } stepperDIR_t;
 
     typedef enum {

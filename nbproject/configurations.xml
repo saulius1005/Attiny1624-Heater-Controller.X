@@ -28,6 +28,11 @@
       <itemPath>ADC.h</itemPath>
       <itemPath>CLK.c</itemPath>
       <itemPath>CLK.h</itemPath>
+      <itemPath>LM35.c</itemPath>
+      <itemPath>LM35.h</itemPath>
+      <itemPath>mt6701.c</itemPath>
+      <itemPath>mt6701.h</itemPath>
+      <itemPath>mt6701Var.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -73,6 +78,9 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <AtmelIceTool>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
+      </AtmelIceTool>
       <HI-TECH-COMP>
         <property key="additional-warnings" value="true"/>
         <property key="asmlist" value="true"/>

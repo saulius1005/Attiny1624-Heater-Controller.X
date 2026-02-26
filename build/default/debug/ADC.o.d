@@ -23,7 +23,7 @@ build/default/debug/ADC.o.d build/default/debug/ADC.o: ADC.c settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- stepper.h
+ stepper.h LM35.h mt6701.h
 
 settings.h:
 
@@ -80,3 +80,7 @@ CLK.h:
 ADC.h:
 
 stepper.h:
+
+LM35.h:
+
+mt6701.h:

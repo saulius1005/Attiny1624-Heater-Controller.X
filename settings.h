@@ -24,6 +24,8 @@ extern "C" {
 #include "CLK.h"    
 #include "ADC.h"    
 #include "stepper.h"
+#include "LM35.h"
+#include "mt6701.h"
 
 
 
@@ -35,6 +37,11 @@ extern "C" {
     void RTC_OFF();
     
     void CLOCK_INHF_clock_init();
+    
+    void ADC0_init();
+    uint16_t ADC0_Read(uint8_t channel);
+    
+    uint16_t MT6701_Read();
     
 
 

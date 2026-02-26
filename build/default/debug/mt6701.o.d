@@ -1,4 +1,4 @@
-build/default/production/CLK.o.d build/default/production/CLK.o: CLK.c \
+build/default/debug/mt6701.o.d build/default/debug/mt6701.o: mt6701.c \
  settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \
@@ -24,7 +24,7 @@ build/default/production/CLK.o.d build/default/production/CLK.o: CLK.c \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- stepper.h LM35.h mt6701.h
+ stepper.h LM35.h mt6701.h mt6701Var.h
 
 settings.h:
 
@@ -85,3 +85,5 @@ stepper.h:
 LM35.h:
 
 mt6701.h:
+
+mt6701Var.h:

@@ -7,7 +7,7 @@ void RTC_ON(uint32_t period_us)
     RTC.CLKSEL = RTC_CLKSEL_INT32K_gc;
 
     // ticks = us * 32768 / 1 000 000
-    RTC.PER = (uint16_t)((period_us * 32768UL) / 1000000UL);
+    RTC.PER = (uint16_t)((period_us * 32768UL) / 1000000UL); //lowest step is 30.5us and highest ~2sec
 
     RTC.CNT = 0;
 
