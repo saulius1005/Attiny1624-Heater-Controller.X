@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c GPIO.c stepper.c RTC.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c GPIO.c stepper.c RTC.c ADC.c CLK.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/stepper.o ${OBJECTDIR}/RTC.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/stepper.o.d ${OBJECTDIR}/RTC.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/stepper.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/CLK.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/stepper.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/ADC.o.d ${OBJECTDIR}/CLK.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/stepper.o ${OBJECTDIR}/RTC.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/stepper.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/CLK.o
 
 # Source Files
-SOURCEFILES=main.c GPIO.c stepper.c RTC.c
+SOURCEFILES=main.c GPIO.c stepper.c RTC.c ADC.c CLK.c
 
 
 
@@ -112,6 +112,18 @@ ${OBJECTDIR}/RTC.o: RTC.c  .generated_files/flags/default/fcdffa8e8f09215f94d224
 	@${RM} ${OBJECTDIR}/RTC.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/RTC.o.d" -MT "${OBJECTDIR}/RTC.o.d" -MT ${OBJECTDIR}/RTC.o -o ${OBJECTDIR}/RTC.o RTC.c 
 	
+${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/df1bedceff8d79ecb3926f8b35ab994d57d0ca74 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ADC.o.d 
+	@${RM} ${OBJECTDIR}/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
+	
+${OBJECTDIR}/CLK.o: CLK.c  .generated_files/flags/default/5f7e7079d4965fdb7836240661717cf2a6e84c4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/CLK.o.d 
+	@${RM} ${OBJECTDIR}/CLK.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/CLK.o.d" -MT "${OBJECTDIR}/CLK.o.d" -MT ${OBJECTDIR}/CLK.o -o ${OBJECTDIR}/CLK.o CLK.c 
+	
 else
 ${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/ec2e88db1951483ce73e32d6f77c06be14a431a3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -136,6 +148,18 @@ ${OBJECTDIR}/RTC.o: RTC.c  .generated_files/flags/default/2d8eaf9f0589002f159efe
 	@${RM} ${OBJECTDIR}/RTC.o.d 
 	@${RM} ${OBJECTDIR}/RTC.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/RTC.o.d" -MT "${OBJECTDIR}/RTC.o.d" -MT ${OBJECTDIR}/RTC.o -o ${OBJECTDIR}/RTC.o RTC.c 
+	
+${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/a17dba46dd13ef4ca90dcadcfd278b475c1b1a9f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ADC.o.d 
+	@${RM} ${OBJECTDIR}/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
+	
+${OBJECTDIR}/CLK.o: CLK.c  .generated_files/flags/default/2e77d079a653dd082a78cc01312abab96e228741 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/CLK.o.d 
+	@${RM} ${OBJECTDIR}/CLK.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/CLK.o.d" -MT "${OBJECTDIR}/CLK.o.d" -MT ${OBJECTDIR}/CLK.o -o ${OBJECTDIR}/CLK.o CLK.c 
 	
 endif
 

@@ -11,10 +11,9 @@
 #ifdef	__cplusplus
 extern "C" {
 #endif
-
-#define F_CPU 20000000UL
     
 #include <xc.h>
+#include <avr/cpufunc.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -22,13 +21,19 @@ extern "C" {
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+#include "CLK.h"    
+#include "ADC.h"    
 #include "stepper.h"
+
+
 
     void GPIO_init();
     void Stepper_enable(stepper_state_t en);
     
     void RTC_ON(uint16_t period_ms);
     void RTC_OFF();
+    
+    void CLOCK_INHF_clock_init();
     
 
 

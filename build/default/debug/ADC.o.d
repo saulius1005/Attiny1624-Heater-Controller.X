@@ -1,5 +1,4 @@
-build/default/debug/stepper.o.d build/default/debug/stepper.o: stepper.c \
- settings.h \
+build/default/debug/ADC.o.d build/default/debug/ADC.o: ADC.c settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\io.h \
@@ -24,7 +23,7 @@ build/default/debug/stepper.o.d build/default/debug/stepper.o: stepper.c \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- stepper.h stepeprVar.h
+ stepper.h
 
 settings.h:
 
@@ -81,5 +80,3 @@ CLK.h:
 ADC.h:
 
 stepper.h:
-
-stepeprVar.h:

@@ -24,6 +24,10 @@
       <itemPath>stepper.h</itemPath>
       <itemPath>stepeprVar.h</itemPath>
       <itemPath>RTC.c</itemPath>
+      <itemPath>ADC.c</itemPath>
+      <itemPath>ADC.h</itemPath>
+      <itemPath>CLK.c</itemPath>
+      <itemPath>CLK.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
