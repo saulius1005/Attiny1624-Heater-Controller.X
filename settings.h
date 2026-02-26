@@ -29,8 +29,9 @@ extern "C" {
 
     void GPIO_init();
     void Stepper_enable(stepper_state_t en);
+    void StepperStep();
     
-    void RTC_ON(uint16_t period_ms);
+    void RTC_ON(uint32_t period_us);
     void RTC_OFF();
     
     void CLOCK_INHF_clock_init();

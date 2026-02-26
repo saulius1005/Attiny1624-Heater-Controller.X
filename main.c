@@ -11,12 +11,12 @@ int main() {
 
     CLOCK_INHF_clock_init();
     GPIO_init();
-    Stepper_enable(OFF);
-    RTC_ON(10000);
     Stepper_enable(ON);
+    Motor.steps = 6400; //full circle
     
     while(1){
-        if(RTC.INTFLAGS & RTC_OVF_bm){//after 10 seconds it will turn off
+        StepperStep();
+        if(Motor.steps == 0){
             Stepper_enable(OFF);
         }
     }

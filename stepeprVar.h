@@ -18,7 +18,12 @@ extern "C" {
 Stepper_data Motor = {
 .Enable = OFF,
 .Direction = CW,
-.Step = OFF
+.Step = OFF,
+.steps = 0,
+.stepwidth = 1, //1us
+.state = STEP_IDLE
+//.stepHigh = 0,
+//.stepLow = 0
 };
 
 

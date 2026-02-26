@@ -1,24 +1,17 @@
 #include "settings.h"
 
-void RTC_ON(uint16_t period_ms)
+void RTC_ON(uint32_t period_us)
 {
-    // Wait until RTC synchronization is complete
     while (RTC.STATUS > 0);
+   
+    RTC.CLKSEL = RTC_CLKSEL_INT32K_gc;
 
-    // Select 1 kHz internal oscillator (32768 Hz / 32 = 1024 Hz)
-    RTC.CLKSEL = RTC_CLKSEL_INT1K_gc;
+    // ticks = us * 32768 / 1 000 000
+    RTC.PER = (uint16_t)((period_us * 32768UL) / 1000000UL);
 
-    // Set period register: RTC counts from 0 to PER (interrupt occurs when COUNT == PER)
-    RTC.PER = (uint16_t)(period_ms * 1.024) + 0.5;  
-
-    // Initialize counter to 0
     RTC.CNT = 0;
 
-    // Enable RTC and set prescaler to DIV1
     RTC.CTRLA = RTC_RTCEN_bm | RTC_PRESCALER_DIV1_gc;
-
-    // Optional: run RTC in debug mode
-    // RTC.DBGCTRL |= RTC_DBGRUN_bm;
 }
 
 /*

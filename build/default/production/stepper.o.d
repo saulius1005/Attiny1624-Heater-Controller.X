@@ -17,13 +17,14 @@ build/default/production/stepper.o.d build/default/production/stepper.o: \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\fuse.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h \
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h stepper.h \
- stepeprVar.h
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
+ stepper.h stepeprVar.h
 
 settings.h:
 
@@ -61,6 +62,8 @@ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\lock.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h:
 
+c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h:
+
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h:
@@ -72,6 +75,10 @@ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h:
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h:
+
+CLK.h:
+
+ADC.h:
 
 stepper.h:
 

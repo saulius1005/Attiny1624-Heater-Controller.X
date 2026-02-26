@@ -1,4 +1,4 @@
-build/default/production/main.o.d build/default/production/main.o: main.c \
+build/default/production/ADC.o.d build/default/production/ADC.o: ADC.c \
  settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \
