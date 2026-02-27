@@ -1,4 +1,4 @@
-build/default/production/RTC.o.d build/default/production/RTC.o: RTC.c \
+build/default/production/TCA.o.d build/default/production/TCA.o: TCA.c \
  settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \

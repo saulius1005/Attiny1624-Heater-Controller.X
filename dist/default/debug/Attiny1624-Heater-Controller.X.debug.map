@@ -1,11 +1,15 @@
 Archive member included to satisfy reference by file (symbol)
 
+c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+                              build/default/debug/TCA.o (__mulsi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
                               build/default/debug/RTC.o (__udivmodsi4)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
                               build/default/debug/stepper.o (__do_copy_data)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
                               build/default/debug/mt6701.o (__umulhisi3)
+c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+                              c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o) (__muluhisi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
                               C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o (exit)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
@@ -135,13 +139,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/debug/stepper.o
  .data          0x0000000000000000        0x0 build/default/debug/stepper.o
  .bss           0x0000000000000000        0x0 build/default/debug/stepper.o
- .text.Stepper_enable
-                0x0000000000000000       0x14 build/default/debug/stepper.o
- .text.StepperDir
-                0x0000000000000000       0x14 build/default/debug/stepper.o
  .text          0x0000000000000000        0x0 build/default/debug/RTC.o
  .data          0x0000000000000000        0x0 build/default/debug/RTC.o
  .bss           0x0000000000000000        0x0 build/default/debug/RTC.o
+ .text.RTC_ON   0x0000000000000000       0x44 build/default/debug/RTC.o
  .text          0x0000000000000000        0x0 build/default/debug/ADC.o
  .data          0x0000000000000000        0x0 build/default/debug/ADC.o
  .bss           0x0000000000000000        0x0 build/default/debug/ADC.o
@@ -169,6 +170,27 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/debug/WORK.o
  .data          0x0000000000000000        0x0 build/default/debug/WORK.o
  .bss           0x0000000000000000        0x0 build/default/debug/WORK.o
+ .text          0x0000000000000000        0x0 build/default/debug/TCA.o
+ .data          0x0000000000000000        0x0 build/default/debug/TCA.o
+ .bss           0x0000000000000000        0x0 build/default/debug/TCA.o
+ .text.TCA0_OFF
+                0x0000000000000000        0xc build/default/debug/TCA.o
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
@@ -217,6 +239,22 @@ Discarded input sections
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
@@ -674,6 +712,7 @@ LOAD build/default/debug/USART.o
 LOAD build/default/debug/HM-10.o
 LOAD build/default/debug/CRC.o
 LOAD build/default/debug/WORK.o
+LOAD build/default/debug/TCA.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
 END GROUP
@@ -948,6 +987,7 @@ END GROUP
  .comment       0x000000000000002f       0x30 build/default/debug/HM-10.o
  .comment       0x000000000000002f       0x30 build/default/debug/CRC.o
  .comment       0x000000000000002f       0x30 build/default/debug/WORK.o
+ .comment       0x000000000000002f       0x30 build/default/debug/TCA.o
  .comment       0x000000000000002f       0x2c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
                                          0x2d (size before relaxing)
  .comment       0x000000000000005b       0x2d c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
@@ -970,103 +1010,107 @@ END GROUP
  .comment       0x000000000000005b       0x2d c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(floorf.o)
 
 .stack.descriptors.hdr
-                0x0000000000000000      0x2a0
+                0x0000000000000000      0x2bc
  .stack.descriptors.hdr
-                0x0000000000000000        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
  .stack.descriptors.hdr
-                0x000000000000000e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
+                0x000000000000000e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .stack.descriptors.hdr
-                0x000000000000001c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x000000000000001c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
  .stack.descriptors.hdr
-                0x000000000000002a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
+                0x000000000000002a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
  .stack.descriptors.hdr
-                0x0000000000000038        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vfprintf.o)
+                0x0000000000000038        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
  .stack.descriptors.hdr
-                0x0000000000000046        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strncmp.o)
+                0x0000000000000046        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
  .stack.descriptors.hdr
-                0x0000000000000054        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(errno.o)
+                0x0000000000000054        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vfprintf.o)
  .stack.descriptors.hdr
-                0x0000000000000062        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
+                0x0000000000000062        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strncmp.o)
  .stack.descriptors.hdr
-                0x0000000000000070        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x0000000000000070        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(errno.o)
  .stack.descriptors.hdr
-                0x000000000000007e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(fputc.o)
+                0x000000000000007e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
  .stack.descriptors.hdr
-                0x000000000000008c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_a.o)
+                0x000000000000008c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
  .stack.descriptors.hdr
-                0x000000000000009a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__pop_float.o)
+                0x000000000000009a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(fputc.o)
  .stack.descriptors.hdr
-                0x00000000000000a8        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(memset.o)
+                0x00000000000000a8        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_a.o)
  .stack.descriptors.hdr
-                0x00000000000000b6        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strcpy.o)
+                0x00000000000000b6        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__pop_float.o)
  .stack.descriptors.hdr
-                0x00000000000000c4        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strlen.o)
+                0x00000000000000c4        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(memset.o)
  .stack.descriptors.hdr
-                0x00000000000000d2        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x00000000000000d2        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strcpy.o)
  .stack.descriptors.hdr
-                0x00000000000000e0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(tolower.o)
+                0x00000000000000e0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strlen.o)
  .stack.descriptors.hdr
-                0x00000000000000ee        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(toupper.o)
+                0x00000000000000ee        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
  .stack.descriptors.hdr
-                0x00000000000000fc        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_fp.o)
+                0x00000000000000fc        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(tolower.o)
  .stack.descriptors.hdr
-                0x000000000000010a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
+                0x000000000000010a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(toupper.o)
  .stack.descriptors.hdr
-                0x0000000000000118        0xe C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+                0x0000000000000118        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_fp.o)
  .stack.descriptors.hdr
-                0x0000000000000126        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_divmodhi4.o)
+                0x0000000000000126        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
  .stack.descriptors.hdr
-                0x0000000000000134        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+                0x0000000000000134        0xe C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
  .stack.descriptors.hdr
-                0x0000000000000142        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivdi3.o)
+                0x0000000000000142        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_divmodhi4.o)
  .stack.descriptors.hdr
-                0x0000000000000150        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmod64.o)
+                0x0000000000000150        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
  .stack.descriptors.hdr
-                0x000000000000015e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_negdi2.o)
+                0x000000000000015e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivdi3.o)
  .stack.descriptors.hdr
-                0x000000000000016c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_ashrdi3.o)
+                0x000000000000016c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmod64.o)
  .stack.descriptors.hdr
-                0x000000000000017a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_cmpdi2_with_0.o)
+                0x000000000000017a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_negdi2.o)
  .stack.descriptors.hdr
-                0x0000000000000188        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodhi4.o)
+                0x0000000000000188        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_ashrdi3.o)
  .stack.descriptors.hdr
-                0x0000000000000196        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3.o)
+                0x0000000000000196        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_cmpdi2_with_0.o)
  .stack.descriptors.hdr
-                0x00000000000001a4        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3x.o)
+                0x00000000000001a4        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodhi4.o)
  .stack.descriptors.hdr
-                0x00000000000001b2        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(cmpsf2.o)
+                0x00000000000001b2        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3.o)
  .stack.descriptors.hdr
-                0x00000000000001c0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3.o)
+                0x00000000000001c0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3x.o)
  .stack.descriptors.hdr
-                0x00000000000001ce        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3x.o)
+                0x00000000000001ce        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(cmpsf2.o)
  .stack.descriptors.hdr
-                0x00000000000001dc        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixsfsi.o)
+                0x00000000000001dc        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3.o)
  .stack.descriptors.hdr
-                0x00000000000001ea        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixunssfsi.o)
+                0x00000000000001ea        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3x.o)
  .stack.descriptors.hdr
-                0x00000000000001f8        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(floorf.o)
+                0x00000000000001f8        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixsfsi.o)
  .stack.descriptors.hdr
-                0x0000000000000206        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_cmp.o)
+                0x0000000000000206        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixunssfsi.o)
  .stack.descriptors.hdr
-                0x0000000000000214        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_inf.o)
+                0x0000000000000214        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(floorf.o)
  .stack.descriptors.hdr
-                0x0000000000000222        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_nan.o)
+                0x0000000000000222        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_cmp.o)
  .stack.descriptors.hdr
-                0x0000000000000230        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscA.o)
+                0x0000000000000230        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_inf.o)
  .stack.descriptors.hdr
-                0x000000000000023e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscB.o)
+                0x000000000000023e        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_nan.o)
  .stack.descriptors.hdr
-                0x000000000000024c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_round.o)
+                0x000000000000024c        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscA.o)
  .stack.descriptors.hdr
-                0x000000000000025a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_split3.o)
+                0x000000000000025a        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscB.o)
  .stack.descriptors.hdr
-                0x0000000000000268        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_zero.o)
+                0x0000000000000268        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_round.o)
  .stack.descriptors.hdr
-                0x0000000000000276        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(gesf2.o)
+                0x0000000000000276        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_split3.o)
  .stack.descriptors.hdr
-                0x0000000000000284        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3.o)
+                0x0000000000000284        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_zero.o)
  .stack.descriptors.hdr
-                0x0000000000000292        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3x.o)
+                0x0000000000000292        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(gesf2.o)
+ .stack.descriptors.hdr
+                0x00000000000002a0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3.o)
+ .stack.descriptors.hdr
+                0x00000000000002ae        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3x.o)
 
 .note.GNU-stack
                 0x0000000000000000        0x0
@@ -1160,7 +1204,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x1f8
+.debug_aranges  0x0000000000000000      0x228
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 build/default/debug/main.o
@@ -1187,63 +1231,68 @@ END GROUP
  .debug_aranges
                 0x00000000000001b8       0x20 build/default/debug/WORK.o
  .debug_aranges
-                0x00000000000001d8       0x20 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+                0x00000000000001d8       0x30 build/default/debug/TCA.o
+ .debug_aranges
+                0x0000000000000208       0x20 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x6df1
+.debug_info     0x0000000000000000     0x800d
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x1b84 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_info    0x0000000000001b84      0x5f2 build/default/debug/main.o
- .debug_info    0x0000000000002176      0x51c build/default/debug/GPIO.o
- .debug_info    0x0000000000002692      0x8d6 build/default/debug/stepper.o
- .debug_info    0x0000000000002f68      0x7b8 build/default/debug/RTC.o
- .debug_info    0x0000000000003720      0xbf0 build/default/debug/ADC.o
- .debug_info    0x0000000000004310      0x62f build/default/debug/CLK.o
- .debug_info    0x000000000000493f      0x489 build/default/debug/LM35.o
- .debug_info    0x0000000000004dc8      0x46e build/default/debug/mt6701.o
- .debug_info    0x0000000000005236      0x878 build/default/debug/USART.o
- .debug_info    0x0000000000005aae      0xaf3 build/default/debug/HM-10.o
- .debug_info    0x00000000000065a1      0x3c1 build/default/debug/CRC.o
- .debug_info    0x0000000000006962      0x3e2 build/default/debug/WORK.o
- .debug_info    0x0000000000006d44       0xad C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_info    0x0000000000001b84      0x75a build/default/debug/main.o
+ .debug_info    0x00000000000022de      0x51c build/default/debug/GPIO.o
+ .debug_info    0x00000000000027fa      0xcf5 build/default/debug/stepper.o
+ .debug_info    0x00000000000034ef      0x7b8 build/default/debug/RTC.o
+ .debug_info    0x0000000000003ca7      0xbf0 build/default/debug/ADC.o
+ .debug_info    0x0000000000004897      0x62f build/default/debug/CLK.o
+ .debug_info    0x0000000000004ec6      0x483 build/default/debug/LM35.o
+ .debug_info    0x0000000000005349      0x46e build/default/debug/mt6701.o
+ .debug_info    0x00000000000057b7      0x878 build/default/debug/USART.o
+ .debug_info    0x000000000000602f      0xbe4 build/default/debug/HM-10.o
+ .debug_info    0x0000000000006c13      0x3c1 build/default/debug/CRC.o
+ .debug_info    0x0000000000006fd4      0x3e2 build/default/debug/WORK.o
+ .debug_info    0x00000000000073b6      0xbaa build/default/debug/TCA.o
+ .debug_info    0x0000000000007f60       0xad C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_abbrev   0x0000000000000000     0x270c
+.debug_abbrev   0x0000000000000000     0x2848
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x1a0e C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
  .debug_abbrev  0x0000000000001a0e      0x10a build/default/debug/main.o
  .debug_abbrev  0x0000000000001b18       0xa2 build/default/debug/GPIO.o
- .debug_abbrev  0x0000000000001bba      0x1a7 build/default/debug/stepper.o
- .debug_abbrev  0x0000000000001d61      0x102 build/default/debug/RTC.o
- .debug_abbrev  0x0000000000001e63      0x113 build/default/debug/ADC.o
- .debug_abbrev  0x0000000000001f76       0xda build/default/debug/CLK.o
- .debug_abbrev  0x0000000000002050       0xe4 build/default/debug/LM35.o
- .debug_abbrev  0x0000000000002134       0xc3 build/default/debug/mt6701.o
- .debug_abbrev  0x00000000000021f7      0x1af build/default/debug/USART.o
- .debug_abbrev  0x00000000000023a6      0x207 build/default/debug/HM-10.o
- .debug_abbrev  0x00000000000025ad       0xbb build/default/debug/CRC.o
- .debug_abbrev  0x0000000000002668       0x90 build/default/debug/WORK.o
- .debug_abbrev  0x00000000000026f8       0x14 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_abbrev  0x0000000000001bba      0x1b6 build/default/debug/stepper.o
+ .debug_abbrev  0x0000000000001d70      0x102 build/default/debug/RTC.o
+ .debug_abbrev  0x0000000000001e72      0x113 build/default/debug/ADC.o
+ .debug_abbrev  0x0000000000001f85       0xda build/default/debug/CLK.o
+ .debug_abbrev  0x000000000000205f       0xe4 build/default/debug/LM35.o
+ .debug_abbrev  0x0000000000002143       0xc3 build/default/debug/mt6701.o
+ .debug_abbrev  0x0000000000002206      0x1af build/default/debug/USART.o
+ .debug_abbrev  0x00000000000023b5      0x207 build/default/debug/HM-10.o
+ .debug_abbrev  0x00000000000025bc       0xbb build/default/debug/CRC.o
+ .debug_abbrev  0x0000000000002677       0x90 build/default/debug/WORK.o
+ .debug_abbrev  0x0000000000002707      0x12d build/default/debug/TCA.o
+ .debug_abbrev  0x0000000000002834       0x14 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_line     0x0000000000000000     0x12e5
+.debug_line     0x0000000000000000     0x146c
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x14b C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_line    0x000000000000014b      0x142 build/default/debug/main.o
- .debug_line    0x000000000000028d      0x11d build/default/debug/GPIO.o
- .debug_line    0x00000000000003aa      0x1cb build/default/debug/stepper.o
- .debug_line    0x0000000000000575      0x13c build/default/debug/RTC.o
- .debug_line    0x00000000000006b1      0x16e build/default/debug/ADC.o
- .debug_line    0x000000000000081f      0x150 build/default/debug/CLK.o
- .debug_line    0x000000000000096f      0x11e build/default/debug/LM35.o
- .debug_line    0x0000000000000a8d      0x124 build/default/debug/mt6701.o
- .debug_line    0x0000000000000bb1      0x1f2 build/default/debug/USART.o
- .debug_line    0x0000000000000da3      0x35a build/default/debug/HM-10.o
- .debug_line    0x00000000000010fd       0xc4 build/default/debug/CRC.o
- .debug_line    0x00000000000011c1       0xbd build/default/debug/WORK.o
- .debug_line    0x000000000000127e       0x67 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+ .debug_line    0x000000000000014b      0x15a build/default/debug/main.o
+ .debug_line    0x00000000000002a5      0x11d build/default/debug/GPIO.o
+ .debug_line    0x00000000000003c2      0x1cb build/default/debug/stepper.o
+ .debug_line    0x000000000000058d      0x13c build/default/debug/RTC.o
+ .debug_line    0x00000000000006c9      0x16e build/default/debug/ADC.o
+ .debug_line    0x0000000000000837      0x150 build/default/debug/CLK.o
+ .debug_line    0x0000000000000987      0x11e build/default/debug/LM35.o
+ .debug_line    0x0000000000000aa5      0x124 build/default/debug/mt6701.o
+ .debug_line    0x0000000000000bc9      0x1f2 build/default/debug/USART.o
+ .debug_line    0x0000000000000dbb      0x395 build/default/debug/HM-10.o
+ .debug_line    0x0000000000001150       0xc4 build/default/debug/CRC.o
+ .debug_line    0x0000000000001214       0xbd build/default/debug/WORK.o
+ .debug_line    0x00000000000012d1      0x134 build/default/debug/TCA.o
+ .debug_line    0x0000000000001405       0x67 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
 
-.debug_frame    0x0000000000000000      0x324
+.debug_frame    0x0000000000000000      0x398
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x24 build/default/debug/main.o
  .debug_frame   0x0000000000000024       0x24 build/default/debug/GPIO.o
@@ -1254,27 +1303,29 @@ END GROUP
  .debug_frame   0x0000000000000130       0x30 build/default/debug/LM35.o
  .debug_frame   0x0000000000000160       0x30 build/default/debug/mt6701.o
  .debug_frame   0x0000000000000190       0x94 build/default/debug/USART.o
- .debug_frame   0x0000000000000224       0xa0 build/default/debug/HM-10.o
- .debug_frame   0x00000000000002c4       0x3c build/default/debug/CRC.o
- .debug_frame   0x0000000000000300       0x24 build/default/debug/WORK.o
+ .debug_frame   0x0000000000000224       0xc4 build/default/debug/HM-10.o
+ .debug_frame   0x00000000000002e8       0x3c build/default/debug/CRC.o
+ .debug_frame   0x0000000000000324       0x24 build/default/debug/WORK.o
+ .debug_frame   0x0000000000000348       0x50 build/default/debug/TCA.o
 
-.debug_str      0x0000000000000000      0xcc1
+.debug_str      0x0000000000000000      0xd80
  *(.debug_str)
  .debug_str     0x0000000000000000      0xbcd C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
- .debug_str     0x0000000000000bcd       0x51 build/default/debug/main.o
- .debug_str     0x0000000000000c1e        0x0 build/default/debug/GPIO.o
- .debug_str     0x0000000000000c1e       0x1f build/default/debug/stepper.o
- .debug_str     0x0000000000000c3d        0x0 build/default/debug/RTC.o
- .debug_str     0x0000000000000c3d        0x0 build/default/debug/ADC.o
- .debug_str     0x0000000000000c3d        0xd build/default/debug/CLK.o
- .debug_str     0x0000000000000c4a        0xa build/default/debug/LM35.o
- .debug_str     0x0000000000000c54        0xa build/default/debug/mt6701.o
- .debug_str     0x0000000000000c5e        0xa build/default/debug/USART.o
- .debug_str     0x0000000000000c68       0x2b build/default/debug/HM-10.o
- .debug_str     0x0000000000000c93        0x0 build/default/debug/CRC.o
- .debug_str     0x0000000000000c93       0x2e build/default/debug/WORK.o
+ .debug_str     0x0000000000000bcd       0x75 build/default/debug/main.o
+ .debug_str     0x0000000000000c42        0x0 build/default/debug/GPIO.o
+ .debug_str     0x0000000000000c42       0x52 build/default/debug/stepper.o
+ .debug_str     0x0000000000000c94        0x0 build/default/debug/RTC.o
+ .debug_str     0x0000000000000c94        0x0 build/default/debug/ADC.o
+ .debug_str     0x0000000000000c94        0xd build/default/debug/CLK.o
+ .debug_str     0x0000000000000ca1        0xa build/default/debug/LM35.o
+ .debug_str     0x0000000000000cab        0xa build/default/debug/mt6701.o
+ .debug_str     0x0000000000000cb5        0xa build/default/debug/USART.o
+ .debug_str     0x0000000000000cbf       0x41 build/default/debug/HM-10.o
+ .debug_str     0x0000000000000d00        0x0 build/default/debug/CRC.o
+ .debug_str     0x0000000000000d00       0x2e build/default/debug/WORK.o
+ .debug_str     0x0000000000000d2e       0x52 build/default/debug/TCA.o
 
-.debug_loc      0x0000000000000000      0x8ad
+.debug_loc      0x0000000000000000      0x971
  *(.debug_loc)
  .debug_loc     0x0000000000000000       0x88 build/default/debug/stepper.o
  .debug_loc     0x0000000000000088       0x2c build/default/debug/RTC.o
@@ -1282,6 +1333,7 @@ END GROUP
  .debug_loc     0x00000000000000e1       0xa8 build/default/debug/USART.o
  .debug_loc     0x0000000000000189      0x5b6 build/default/debug/HM-10.o
  .debug_loc     0x000000000000073f      0x16e build/default/debug/CRC.o
+ .debug_loc     0x00000000000008ad       0xc4 build/default/debug/TCA.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1301,7 +1353,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x138
+.debug_ranges   0x0000000000000000      0x158
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x10 build/default/debug/main.o
  .debug_ranges  0x0000000000000010       0x10 build/default/debug/GPIO.o
@@ -1315,6 +1367,7 @@ END GROUP
  .debug_ranges  0x00000000000000d0       0x40 build/default/debug/HM-10.o
  .debug_ranges  0x0000000000000110       0x18 build/default/debug/CRC.o
  .debug_ranges  0x0000000000000128       0x10 build/default/debug/WORK.o
+ .debug_ranges  0x0000000000000138       0x20 build/default/debug/TCA.o
 
 .debug_macro
  *(.debug_macro)
@@ -1327,11 +1380,9 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x40 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
 
-.bss.TempSensor
-                0x0000000000803812        0x4
- .bss.TempSensor
-                0x0000000000803812        0x4 build/default/debug/LM35.o
-                0x0000000000803812                TempSensor
+.bss.LM35       0x0000000000803812        0x4
+ .bss.LM35      0x0000000000803812        0x4 build/default/debug/LM35.o
+                0x0000000000803812                LM35
 
 .bss.MT6701     0x0000000000803816        0x4
  .bss.MT6701    0x0000000000803816        0x4 build/default/debug/mt6701.o
@@ -1354,479 +1405,509 @@ LOAD data_init
                 0x0000000000000e30      0x408 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
                 0x0000000000000e30                vfpfcnvrt
 
-.text.__fmt_x   0x0000000000001238      0x256
- .text.__fmt_x  0x0000000000001238      0x256 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x0000000000001238                __fmt_x
-
 .text.BTDataSplitter
-                0x000000000000148e      0x24e
+                0x0000000000001238      0x2de
  .text.BTDataSplitter
-                0x000000000000148e      0x24e build/default/debug/HM-10.o
-                0x000000000000148e                BTDataSplitter
+                0x0000000000001238      0x2de build/default/debug/HM-10.o
+                0x0000000000001238                BTDataSplitter
 
-.text.__fmt_d   0x00000000000016dc      0x174
- .text.__fmt_d  0x00000000000016dc      0x174 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x00000000000016dc                __fmt_d
+.text.__fmt_x   0x0000000000001516      0x256
+ .text.__fmt_x  0x0000000000001516      0x256 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x0000000000001516                __fmt_x
+
+.text.__fmt_d   0x000000000000176c      0x174
+ .text.__fmt_d  0x000000000000176c      0x174 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x000000000000176c                __fmt_d
 
 .text.__pop_int
-                0x0000000000001850      0x172
+                0x00000000000018e0      0x172
  .text.__pop_int
-                0x0000000000001850      0x172 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x0000000000001850                __pop_int
+                0x00000000000018e0      0x172 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x00000000000018e0                __pop_int
 
-.text.__cvt_u   0x00000000000019c2      0x146
- .text.__cvt_u  0x00000000000019c2      0x146 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x00000000000019c2                __cvt_u
+.text.__cvt_u   0x0000000000001a52      0x146
+ .text.__cvt_u  0x0000000000001a52      0x146 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x0000000000001a52                __cvt_u
 
 .rodata.crc8_table
-                0x0000000000809b08      0x100 load address 0x0000000000001b08
+                0x0000000000809b98      0x100 load address 0x0000000000001b98
  .rodata.crc8_table
-                0x0000000000809b08      0x100 build/default/debug/CRC.o
-                0x0000000000809b08                crc8_table
+                0x0000000000809b98      0x100 build/default/debug/CRC.o
+                0x0000000000809b98                crc8_table
 
-.text.floorf    0x0000000000001c08       0xe8
- .text.floorf   0x0000000000001c08       0xe8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(floorf.o)
-                0x0000000000001c08                floorf
+.text.floorf    0x0000000000001c98       0xe8
+ .text.floorf   0x0000000000001c98       0xe8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(floorf.o)
+                0x0000000000001c98                floorf
 
-.text           0x0000000000001cf0       0xde
- .text          0x0000000000001cf0       0xde c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3x.o)
-                0x0000000000001cf0                __divsf3x
-                0x0000000000001d18                __divsf3_pse
+.text           0x0000000000001d80       0xde
+ .text          0x0000000000001d80       0xde c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3x.o)
+                0x0000000000001d80                __divsf3x
+                0x0000000000001da8                __divsf3_pse
 
 .text.__pop_ptr
-                0x0000000000001dce       0xd8
+                0x0000000000001e5e       0xd8
  .text.__pop_ptr
-                0x0000000000001dce       0xd8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x0000000000001dce                __pop_ptr
+                0x0000000000001e5e       0xd8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x0000000000001e5e                __pop_ptr
 
-.text           0x0000000000001ea6       0xd4
- .text          0x0000000000001ea6       0xd4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3x.o)
-                0x0000000000001ea6                __mulsf3x
-                0x0000000000001ecc                __mulsf3_pse
+.text           0x0000000000001f36       0xd4
+ .text          0x0000000000001f36       0xd4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3x.o)
+                0x0000000000001f36                __mulsf3x
+                0x0000000000001f5c                __mulsf3_pse
 
-.text.__fmt_o   0x0000000000001f7a       0xd2
- .text.__fmt_o  0x0000000000001f7a       0xd2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x0000000000001f7a                __fmt_o
+.text.__fmt_o   0x000000000000200a       0xd2
+ .text.__fmt_o  0x000000000000200a       0xd2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x000000000000200a                __fmt_o
 
-.text           0x000000000000204c       0xce
- .text          0x000000000000204c       0xce c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3x.o)
-                0x000000000000204c                __addsf3x
+.text           0x00000000000020dc       0xce
+ .text          0x00000000000020dc       0xce c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3x.o)
+                0x00000000000020dc                __addsf3x
 
-.text.__fmt_u   0x000000000000211a       0xae
- .text.__fmt_u  0x000000000000211a       0xae c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
-                0x000000000000211a                __fmt_u
+.rodata         0x000000000080a1aa       0xba load address 0x00000000000021aa
+ .rodata        0x000000000080a1aa       0xba build/default/debug/HM-10.o
+
+.text.__fmt_u   0x0000000000002264       0xae
+ .text.__fmt_u  0x0000000000002264       0xae c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x0000000000002264                __fmt_u
 
 .text.libgcc.div
-                0x00000000000021c8       0xa2
+                0x0000000000002312       0xa2
  .text.libgcc.div
-                0x00000000000021c8       0xa2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmod64.o)
-                0x00000000000021c8                __udivmod64
+                0x0000000000002312       0xa2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmod64.o)
+                0x0000000000002312                __udivmod64
 
-.text.fputc     0x000000000000226a       0x98
- .text.fputc    0x000000000000226a       0x98 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(fputc.o)
-                0x000000000000226a                fputc
-                0x000000000000226a                putc
+.text.fputc     0x00000000000023b4       0x98
+ .text.fputc    0x00000000000023b4       0x98 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(fputc.o)
+                0x00000000000023b4                fputc
+                0x00000000000023b4                putc
 
 .text.StepperStep
-                0x0000000000002302       0x96
+                0x000000000000244c       0x96
  .text.StepperStep
-                0x0000000000002302       0x96 build/default/debug/stepper.o
-                0x0000000000002302                StepperStep
+                0x000000000000244c       0x96 build/default/debug/stepper.o
+                0x000000000000244c                StepperStep
 
 .text.vsnprintf
-                0x0000000000002398       0x84
+                0x00000000000024e2       0x84
  .text.vsnprintf
-                0x0000000000002398       0x84 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
-                0x0000000000002398                vsnprintf
+                0x00000000000024e2       0x84 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vsnprintf.o)
+                0x00000000000024e2                vsnprintf
 
-.text.__pad     0x000000000000241c       0x72
- .text.__pad    0x000000000000241c       0x72 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
-                0x000000000000241c                __pad
+.text.__pad     0x0000000000002566       0x72
+ .text.__pad    0x0000000000002566       0x72 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x0000000000002566                __pad
 
 .text.__printf_core
-                0x000000000000248e       0x68
+                0x00000000000025d8       0x68
  .text.__printf_core
-                0x000000000000248e       0x68 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
-                0x000000000000248e                __printf_core
-
-.rodata         0x000000000080a4f6       0x67 load address 0x00000000000024f6
- .rodata        0x000000000080a4f6       0x67 build/default/debug/HM-10.o
+                0x00000000000025d8       0x68 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x00000000000025d8                __printf_core
 
 .text.BLTReceiver
-                0x000000000000255e       0x66
+                0x0000000000002640       0x66
  .text.BLTReceiver
-                0x000000000000255e       0x66 build/default/debug/HM-10.o
-                0x000000000000255e                BLTReceiver
+                0x0000000000002640       0x66 build/default/debug/HM-10.o
+                0x0000000000002640                BLTReceiver
 
-.text           0x00000000000025c4       0x5e
- .text          0x00000000000025c4       0x5e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixunssfsi.o)
-                0x00000000000025c4                __fixunssfsi
+.text           0x00000000000026a6       0x5e
+ .text          0x00000000000026a6       0x5e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixunssfsi.o)
+                0x00000000000026a6                __fixunssfsi
 
 .text.read_prec_or_width
-                0x0000000000002622       0x5c
+                0x0000000000002704       0x5c
  .text.read_prec_or_width
-                0x0000000000002622       0x5c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x0000000000002704       0x5c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
 
-.text.__fmt_s   0x000000000000267e       0x54
- .text.__fmt_s  0x000000000000267e       0x54 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
-                0x000000000000267e                __fmt_s
-                0x000000000000267e                __fmt_0_needed
-                0x000000000000267e                __fmt_s_needed
+.text.__fmt_s   0x0000000000002760       0x54
+ .text.__fmt_s  0x0000000000002760       0x54 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
+                0x0000000000002760                __fmt_s
+                0x0000000000002760                __fmt_0_needed
+                0x0000000000002760                __fmt_s_needed
 
-.text           0x00000000000026d2       0x48
- .text          0x00000000000026d2       0x48 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_cmp.o)
-                0x00000000000026d2                __fp_cmp
+.text.main      0x00000000000027b4       0x48
+ .text.main     0x00000000000027b4       0x48 build/default/debug/main.o
+                0x00000000000027b4                main
 
-.text.RTC_ON    0x000000000000271a       0x44
- .text.RTC_ON   0x000000000000271a       0x44 build/default/debug/RTC.o
-                0x000000000000271a                RTC_ON
+.text           0x00000000000027fc       0x48
+ .text          0x00000000000027fc       0x48 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_cmp.o)
+                0x00000000000027fc                __fp_cmp
 
 .text.USART0_sendString
-                0x000000000000275e       0x44
+                0x0000000000002844       0x44
  .text.USART0_sendString
-                0x000000000000275e       0x44 build/default/debug/USART.o
-                0x000000000000275e                USART0_sendString
+                0x0000000000002844       0x44 build/default/debug/USART.o
+                0x0000000000002844                USART0_sendString
 
 .text.libgcc.div
-                0x00000000000027a2       0x44
+                0x0000000000002888       0x44
  .text.libgcc.div
-                0x00000000000027a2       0x44 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
-                0x00000000000027a2                __udivmodsi4
+                0x0000000000002888       0x44 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
+                0x0000000000002888                __udivmodsi4
 
-.text           0x00000000000027e6       0x44
- .text          0x00000000000027e6       0x44 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_split3.o)
-                0x00000000000027e6                __fp_split3
-                0x00000000000027f6                __fp_splitA
+.text           0x00000000000028cc       0x44
+ .text          0x00000000000028cc       0x44 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_split3.o)
+                0x00000000000028cc                __fp_split3
+                0x00000000000028dc                __fp_splitA
 
 .text.ADC0_Read
-                0x000000000000282a       0x40
+                0x0000000000002910       0x40
  .text.ADC0_Read
-                0x000000000000282a       0x40 build/default/debug/ADC.o
-                0x000000000000282a                ADC0_Read
+                0x0000000000002910       0x40 build/default/debug/ADC.o
+                0x0000000000002910                ADC0_Read
 
 .text.USART_printf
-                0x000000000000286a       0x40
+                0x0000000000002950       0x40
  .text.USART_printf
-                0x000000000000286a       0x40 build/default/debug/USART.o
-                0x000000000000286a                USART_printf
+                0x0000000000002950       0x40 build/default/debug/USART.o
+                0x0000000000002950                USART_printf
 
 .text.__fmt_state
-                0x00000000000028aa       0x40
+                0x0000000000002990       0x40
  .text.__fmt_state
-                0x00000000000028aa       0x40 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
-                0x00000000000028aa                __fmt_state
+                0x0000000000002990       0x40 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x0000000000002990                __fmt_state
 
 .text.__pop_float
-                0x00000000000028ea       0x40
+                0x00000000000029d0       0x40
  .text.__pop_float
-                0x00000000000028ea       0x40 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__pop_float.o)
-                0x00000000000028ea                __pop_float_needed
-                0x00000000000028ea                __pop_float
+                0x00000000000029d0       0x40 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__pop_float.o)
+                0x00000000000029d0                __pop_float_needed
+                0x00000000000029d0                __pop_float
 
-.text.strncmp   0x000000000000292a       0x3e
- .text.strncmp  0x000000000000292a       0x3e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strncmp.o)
-                0x000000000000292a                strncmp
+.text.strncmp   0x0000000000002a10       0x3e
+ .text.strncmp  0x0000000000002a10       0x3e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strncmp.o)
+                0x0000000000002a10                strncmp
 
 .text.libgcc.builtins
-                0x0000000000002968       0x3c
+                0x0000000000002a4e       0x3c
  .text.libgcc.builtins
-                0x0000000000002968       0x3c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_ashrdi3.o)
-                0x0000000000002968                __ashrdi3
-                0x000000000000296c                __lshrdi3
+                0x0000000000002a4e       0x3c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_ashrdi3.o)
+                0x0000000000002a4e                __ashrdi3
+                0x0000000000002a52                __lshrdi3
 
-.text.__out     0x00000000000029a4       0x3a
- .text.__out    0x00000000000029a4       0x3a c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
-                0x00000000000029a4                __out
+.text.TCA0_ON   0x0000000000002a8a       0x3a
+ .text.TCA0_ON  0x0000000000002a8a       0x3a build/default/debug/TCA.o
+                0x0000000000002a8a                TCA0_ON
+
+.text.__out     0x0000000000002ac4       0x3a
+ .text.__out    0x0000000000002ac4       0x3a c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x0000000000002ac4                __out
 
 .text.GPIO_init
-                0x00000000000029de       0x32
+                0x0000000000002afe       0x32
  .text.GPIO_init
-                0x00000000000029de       0x32 build/default/debug/GPIO.o
-                0x00000000000029de                GPIO_init
+                0x0000000000002afe       0x32 build/default/debug/GPIO.o
+                0x0000000000002afe                GPIO_init
 
 .text.MT6701_Read
-                0x0000000000002a10       0x32
+                0x0000000000002b30       0x32
  .text.MT6701_Read
-                0x0000000000002a10       0x32 build/default/debug/mt6701.o
-                0x0000000000002a10                MT6701_Read
+                0x0000000000002b30       0x32 build/default/debug/mt6701.o
+                0x0000000000002b30                MT6701_Read
 
 .text.libgcc.prologue
-                0x0000000000002a42       0x32
+                0x0000000000002b62       0x32
  .text.libgcc.prologue
-                0x0000000000002a42       0x32 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_prologue.o)
-                0x0000000000002a42                __prologue_saves__
+                0x0000000000002b62       0x32 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_prologue.o)
+                0x0000000000002b62                __prologue_saves__
 
 .text.crc8_cdma2000
-                0x0000000000002a74       0x30
+                0x0000000000002b94       0x30
  .text.crc8_cdma2000
-                0x0000000000002a74       0x30 build/default/debug/CRC.o
-                0x0000000000002a74                crc8_cdma2000
+                0x0000000000002b94       0x30 build/default/debug/CRC.o
+                0x0000000000002b94                crc8_cdma2000
 
-.text.vfprintf  0x0000000000002aa4       0x30
+.text.vfprintf  0x0000000000002bc4       0x30
  .text.vfprintf
-                0x0000000000002aa4       0x30 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vfprintf.o)
-                0x0000000000002aa4                vfprintf
+                0x0000000000002bc4       0x30 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(vfprintf.o)
+                0x0000000000002bc4                vfprintf
 
 .text.libgcc.prologue
-                0x0000000000002ad4       0x30
+                0x0000000000002bf4       0x30
  .text.libgcc.prologue
-                0x0000000000002ad4       0x30 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_epilogue.o)
-                0x0000000000002ad4                __epilogue_restores__
+                0x0000000000002bf4       0x30 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_epilogue.o)
+                0x0000000000002bf4                __epilogue_restores__
 
 .text.libgcc.div
-                0x0000000000002b04       0x28
+                0x0000000000002c24       0x28
  .text.libgcc.div
-                0x0000000000002b04       0x28 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_divmodhi4.o)
-                0x0000000000002b04                _div
-                0x0000000000002b04                __divmodhi4
+                0x0000000000002c24       0x28 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_divmodhi4.o)
+                0x0000000000002c24                _div
+                0x0000000000002c24                __divmodhi4
 
 .text.libgcc.div
-                0x0000000000002b2c       0x28
+                0x0000000000002c4c       0x28
  .text.libgcc.div
-                0x0000000000002b2c       0x28 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodhi4.o)
-                0x0000000000002b2c                __udivmodhi4
-
-.text.main      0x0000000000002b54       0x26
- .text.main     0x0000000000002b54       0x26 build/default/debug/main.o
-                0x0000000000002b54                main
+                0x0000000000002c4c       0x28 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodhi4.o)
+                0x0000000000002c4c                __udivmodhi4
 
 .text.ADC0_init
-                0x0000000000002b7a       0x22
+                0x0000000000002c74       0x22
  .text.ADC0_init
-                0x0000000000002b7a       0x22 build/default/debug/ADC.o
-                0x0000000000002b7a                ADC0_init
+                0x0000000000002c74       0x22 build/default/debug/ADC.o
+                0x0000000000002c74                ADC0_init
 
 .text.LM35_Read
-                0x0000000000002b9c       0x22
+                0x0000000000002c96       0x22
  .text.LM35_Read
-                0x0000000000002b9c       0x22 build/default/debug/LM35.o
-                0x0000000000002b9c                LM35_Read
+                0x0000000000002c96       0x22 build/default/debug/LM35.o
+                0x0000000000002c96                LM35_Read
 
-.text           0x0000000000002bbe       0x22
- .text          0x0000000000002bbe       0x22 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_round.o)
-                0x0000000000002bbe                __fp_round
+.text           0x0000000000002cb8       0x22
+ .text          0x0000000000002cb8       0x22 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_round.o)
+                0x0000000000002cb8                __fp_round
 
 .text.CLOCK_INHF_clock_init
-                0x0000000000002be0       0x20
+                0x0000000000002cda       0x20
  .text.CLOCK_INHF_clock_init
-                0x0000000000002be0       0x20 build/default/debug/CLK.o
-                0x0000000000002be0                CLOCK_INHF_clock_init
-
-.text.libgcc    0x0000000000002c00       0x20
- .text.libgcc   0x0000000000002c00       0x20 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_negdi2.o)
-                0x0000000000002c00                __negdi2
+                0x0000000000002cda       0x20 build/default/debug/CLK.o
+                0x0000000000002cda                CLOCK_INHF_clock_init
 
 .text.libgcc.mul
-                0x0000000000002c20       0x1e
+                0x0000000000002cfa       0x20
  .text.libgcc.mul
-                0x0000000000002c20       0x1e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
-                0x0000000000002c20                __umulhisi3
+                0x0000000000002cfa       0x20 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_mulsi3.o)
+                0x0000000000002cfa                __mulsi3
+
+.text.libgcc    0x0000000000002d1a       0x20
+ .text.libgcc   0x0000000000002d1a       0x20 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_negdi2.o)
+                0x0000000000002d1a                __negdi2
+
+.text.libgcc.mul
+                0x0000000000002d3a       0x1e
+ .text.libgcc.mul
+                0x0000000000002d3a       0x1e c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_umulhisi3.o)
+                0x0000000000002d3a                __umulhisi3
 
 .text.WorkingMode
-                0x0000000000002c3e       0x1c
+                0x0000000000002d58       0x1c
  .text.WorkingMode
-                0x0000000000002c3e       0x1c build/default/debug/WORK.o
-                0x0000000000002c3e                WorkingMode
+                0x0000000000002d58       0x1c build/default/debug/WORK.o
+                0x0000000000002d58                WorkingMode
 
-.text.strlen    0x0000000000002c5a       0x1c
- .text.strlen   0x0000000000002c5a       0x1c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strlen.o)
-                0x0000000000002c5a                strlen
+.text.strlen    0x0000000000002d74       0x1c
+ .text.strlen   0x0000000000002d74       0x1c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strlen.o)
+                0x0000000000002d74                strlen
 
 .text.libgcc.div
-                0x0000000000002c76       0x1c
+                0x0000000000002d90       0x1c
  .text.libgcc.div
-                0x0000000000002c76       0x1c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivdi3.o)
-                0x0000000000002c76                __umoddi3
-                0x0000000000002c7a                __udivdi3
-                0x0000000000002c7c                __udivdi3_umoddi3
+                0x0000000000002d90       0x1c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivdi3.o)
+                0x0000000000002d90                __umoddi3
+                0x0000000000002d94                __udivdi3
+                0x0000000000002d96                __udivdi3_umoddi3
 
 .text.USART0_init
-                0x0000000000002c92       0x16
+                0x0000000000002dac       0x16
  .text.USART0_init
-                0x0000000000002c92       0x16 build/default/debug/USART.o
-                0x0000000000002c92                USART0_init
+                0x0000000000002dac       0x16 build/default/debug/USART.o
+                0x0000000000002dac                USART0_init
 
 .text.USART0_readChar
-                0x0000000000002ca8       0x16
+                0x0000000000002dc2       0x16
  .text.USART0_readChar
-                0x0000000000002ca8       0x16 build/default/debug/USART.o
-                0x0000000000002ca8                USART0_readChar
+                0x0000000000002dc2       0x16 build/default/debug/USART.o
+                0x0000000000002dc2                USART0_readChar
 
-.text.exit      0x0000000000002cbe       0x16
- .text.exit     0x0000000000002cbe       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x0000000000002cbe                exit
+.text.libgcc.mul
+                0x0000000000002dd8       0x16
+ .text.libgcc.mul
+                0x0000000000002dd8       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_muluhisi3.o)
+                0x0000000000002dd8                __muluhisi3
+
+.text.exit      0x0000000000002dee       0x16
+ .text.exit     0x0000000000002dee       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x0000000000002dee                exit
 
 .rodata.state_table
-                0x000000000080acd4       0x16 load address 0x0000000000002cd4
+                0x000000000080ae04       0x16 load address 0x0000000000002e04
  .rodata.state_table
-                0x000000000080acd4       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
+                0x000000000080ae04       0x16 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_core.o)
 
-.text.RTC_OFF   0x0000000000002cea       0x12
- .text.RTC_OFF  0x0000000000002cea       0x12 build/default/debug/RTC.o
-                0x0000000000002cea                RTC_OFF
+.text.Stepper_enable
+                0x0000000000002e1a       0x14
+ .text.Stepper_enable
+                0x0000000000002e1a       0x14 build/default/debug/stepper.o
+                0x0000000000002e1a                Stepper_enable
+
+.text.StepperDir
+                0x0000000000002e2e       0x14
+ .text.StepperDir
+                0x0000000000002e2e       0x14 build/default/debug/stepper.o
+                0x0000000000002e2e                StepperDir
+
+.text.RTC_OFF   0x0000000000002e42       0x12
+ .text.RTC_OFF  0x0000000000002e42       0x12 build/default/debug/RTC.o
+                0x0000000000002e42                RTC_OFF
 
 .text.Bluetooth_init
-                0x0000000000002cfc       0x12
+                0x0000000000002e54       0x12
  .text.Bluetooth_init
-                0x0000000000002cfc       0x12 build/default/debug/HM-10.o
-                0x0000000000002cfc                Bluetooth_init
+                0x0000000000002e54       0x12 build/default/debug/HM-10.o
+                0x0000000000002e54                Bluetooth_init
 
-.text.memset    0x0000000000002d0e       0x12
- .text.memset   0x0000000000002d0e       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(memset.o)
-                0x0000000000002d0e                memset
+.text.memset    0x0000000000002e66       0x12
+ .text.memset   0x0000000000002e66       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(memset.o)
+                0x0000000000002e66                memset
 
-.text.toupper   0x0000000000002d20       0x12
- .text.toupper  0x0000000000002d20       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(toupper.o)
-                0x0000000000002d20                toupper
+.text.toupper   0x0000000000002e78       0x12
+ .text.toupper  0x0000000000002e78       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(toupper.o)
+                0x0000000000002e78                toupper
 
-.text.libgcc    0x0000000000002d32       0x12
- .text.libgcc   0x0000000000002d32       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_cmpdi2_with_0.o)
-                0x0000000000002d32                __cmpdi2_with_0
+.text.libgcc    0x0000000000002e8a       0x12
+ .text.libgcc   0x0000000000002e8a       0x12 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_cmpdi2_with_0.o)
+                0x0000000000002e8a                __cmpdi2_with_0
 
 .text.USART0_sendChar
-                0x0000000000002d44       0x10
+                0x0000000000002e9c       0x10
  .text.USART0_sendChar
-                0x0000000000002d44       0x10 build/default/debug/USART.o
-                0x0000000000002d44                USART0_sendChar
+                0x0000000000002e9c       0x10 build/default/debug/USART.o
+                0x0000000000002e9c                USART0_sendChar
 
-.rodata         0x000000000080ad54       0x10 load address 0x0000000000002d54
- .rodata        0x000000000080ad54       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_a.o)
+.rodata         0x000000000080aeac       0x10 load address 0x0000000000002eac
+ .rodata        0x000000000080aeac       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_a.o)
 
-.text.strcpy    0x0000000000002d64       0x10
- .text.strcpy   0x0000000000002d64       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strcpy.o)
-                0x0000000000002d64                strcpy
+.text.strcpy    0x0000000000002ebc       0x10
+ .text.strcpy   0x0000000000002ebc       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(strcpy.o)
+                0x0000000000002ebc                strcpy
 
-.text.tolower   0x0000000000002d74       0x10
- .text.tolower  0x0000000000002d74       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(tolower.o)
-                0x0000000000002d74                tolower
+.text.tolower   0x0000000000002ecc       0x10
+ .text.tolower  0x0000000000002ecc       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(tolower.o)
+                0x0000000000002ecc                tolower
 
-.rodata         0x000000000080ad84       0x10 load address 0x0000000000002d84
- .rodata        0x000000000080ad84       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_fp.o)
+.rodata         0x000000000080aedc       0x10 load address 0x0000000000002edc
+ .rodata        0x000000000080aedc       0x10 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_fp.o)
 
-.text           0x0000000000002d94        0xe
- .text          0x0000000000002d94        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3.o)
-                0x0000000000002d94                __subsf3
-                0x0000000000002d96                __addsf3
+.text           0x0000000000002eec        0xe
+ .text          0x0000000000002eec        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(addsf3.o)
+                0x0000000000002eec                __subsf3
+                0x0000000000002eee                __addsf3
 
-.text           0x0000000000002da2        0xe
- .text          0x0000000000002da2        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixsfsi.o)
-                0x0000000000002da2                __fixsfsi
+.text           0x0000000000002efa        0xe
+ .text          0x0000000000002efa        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fixsfsi.o)
+                0x0000000000002efa                __fixsfsi
 
-.text           0x0000000000002db0        0xe
- .text          0x0000000000002db0        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscA.o)
-                0x0000000000002db0                __fp_pscA
+.text           0x0000000000002f08        0xe
+ .text          0x0000000000002f08        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscA.o)
+                0x0000000000002f08                __fp_pscA
 
-.text           0x0000000000002dbe        0xe
- .text          0x0000000000002dbe        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscB.o)
-                0x0000000000002dbe                __fp_pscB
+.text           0x0000000000002f16        0xe
+ .text          0x0000000000002f16        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_pscB.o)
+                0x0000000000002f16                __fp_pscB
 
-.text           0x0000000000002dcc        0xe
- .text          0x0000000000002dcc        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_zero.o)
-                0x0000000000002dcc                __fp_zero
-                0x0000000000002dce                __fp_szero
+.text           0x0000000000002f24        0xe
+ .text          0x0000000000002f24        0xe c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_zero.o)
+                0x0000000000002f24                __fp_zero
+                0x0000000000002f26                __fp_szero
 
-.text.avrlibc   0x0000000000002dda        0xc
- .text.avrlibc  0x0000000000002dda        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
-                0x0000000000002dda                ccp_write_io
+.text.TCA0_init
+                0x0000000000002f32        0xc
+ .text.TCA0_init
+                0x0000000000002f32        0xc build/default/debug/TCA.o
+                0x0000000000002f32                TCA0_init
 
-.text           0x0000000000002de6        0xc
- .text          0x0000000000002de6        0xc c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_inf.o)
-                0x0000000000002de6                __fp_inf
+.text.avrlibc   0x0000000000002f3e        0xc
+ .text.avrlibc  0x0000000000002f3e        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3\libattiny1624.a(ccp_write.o)
+                0x0000000000002f3e                ccp_write_io
 
-.text           0x0000000000002df2        0xa
- .text          0x0000000000002df2        0xa c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(cmpsf2.o)
-                0x0000000000002df2                __nesf2
-                0x0000000000002df2                __eqsf2
-                0x0000000000002df2                __cmpsf2
-                0x0000000000002df2                __ltsf2
-                0x0000000000002df2                __lesf2
+.text           0x0000000000002f4a        0xc
+ .text          0x0000000000002f4a        0xc c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_inf.o)
+                0x0000000000002f4a                __fp_inf
 
-.text           0x0000000000002dfc        0xa
- .text          0x0000000000002dfc        0xa c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(gesf2.o)
-                0x0000000000002dfc                __gesf2
-                0x0000000000002dfc                __gtsf2
+.text           0x0000000000002f56        0xa
+ .text          0x0000000000002f56        0xa c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(cmpsf2.o)
+                0x0000000000002f56                __nesf2
+                0x0000000000002f56                __eqsf2
+                0x0000000000002f56                __cmpsf2
+                0x0000000000002f56                __ltsf2
+                0x0000000000002f56                __lesf2
 
-.text           0x0000000000002e06        0x8
- .text          0x0000000000002e06        0x8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3.o)
-                0x0000000000002e06                __divsf3
+.text           0x0000000000002f60        0xa
+ .text          0x0000000000002f60        0xa c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(gesf2.o)
+                0x0000000000002f60                __gesf2
+                0x0000000000002f60                __gtsf2
 
-.text           0x0000000000002e0e        0x8
- .text          0x0000000000002e0e        0x8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3.o)
-                0x0000000000002e0e                __mulsf3
+.text           0x0000000000002f6a        0x8
+ .text          0x0000000000002f6a        0x8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(divsf3.o)
+                0x0000000000002f6a                __divsf3
+
+.text           0x0000000000002f72        0x8
+ .text          0x0000000000002f72        0x8 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(mulsf3.o)
+                0x0000000000002f72                __mulsf3
 
 .rodata.nuls.2781
-                0x000000000080ae16        0x7 load address 0x0000000000002e16
+                0x000000000080af7a        0x7 load address 0x0000000000002f7a
  .rodata.nuls.2781
-                0x000000000080ae16        0x7 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
+                0x000000000080af7a        0x7 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__fmt_s.o)
 
 .rodata.nilstr.3022
-                0x000000000080ae1d        0x6 load address 0x0000000000002e1d
+                0x000000000080af81        0x6 load address 0x0000000000002f81
  .rodata.nilstr.3022
-                0x000000000080ae1d        0x6 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
+                0x000000000080af81        0x6 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(__printf_64bit_arg_support.o)
 
-.text           0x0000000000002e24        0x6
- .text          0x0000000000002e24        0x6 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_nan.o)
-                0x0000000000002e24                __fp_nan
+.text           0x0000000000002f88        0x6
+ .text          0x0000000000002f88        0x6 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a(fp_nan.o)
+                0x0000000000002f88                __fp_nan
 
-.text           0x0000000000002e2a        0x4
- .text          0x0000000000002e2a        0x4 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
-                0x0000000000002e2a                __vector_22
-                0x0000000000002e2a                __vector_28
-                0x0000000000002e2a                __vector_1
-                0x0000000000002e2a                __vector_24
-                0x0000000000002e2a                __vector_12
-                0x0000000000002e2a                __bad_interrupt
-                0x0000000000002e2a                __vector_6
-                0x0000000000002e2a                __vector_3
-                0x0000000000002e2a                __vector_23
-                0x0000000000002e2a                __vector_25
-                0x0000000000002e2a                __vector_11
-                0x0000000000002e2a                __vector_13
-                0x0000000000002e2a                __vector_17
-                0x0000000000002e2a                __vector_19
-                0x0000000000002e2a                __vector_7
-                0x0000000000002e2a                __vector_27
-                0x0000000000002e2a                __vector_5
-                0x0000000000002e2a                __vector_4
-                0x0000000000002e2a                __vector_9
-                0x0000000000002e2a                __vector_2
-                0x0000000000002e2a                __vector_21
-                0x0000000000002e2a                __vector_15
-                0x0000000000002e2a                __vector_29
-                0x0000000000002e2a                __vector_8
-                0x0000000000002e2a                __vector_26
-                0x0000000000002e2a                __vector_14
-                0x0000000000002e2a                __vector_10
-                0x0000000000002e2a                __vector_16
-                0x0000000000002e2a                __vector_18
-                0x0000000000002e2a                __vector_20
+.text           0x0000000000002f8e        0x4
+ .text          0x0000000000002f8e        0x4 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/crtattiny1624.o
+                0x0000000000002f8e                __vector_22
+                0x0000000000002f8e                __vector_28
+                0x0000000000002f8e                __vector_1
+                0x0000000000002f8e                __vector_24
+                0x0000000000002f8e                __vector_12
+                0x0000000000002f8e                __bad_interrupt
+                0x0000000000002f8e                __vector_6
+                0x0000000000002f8e                __vector_3
+                0x0000000000002f8e                __vector_23
+                0x0000000000002f8e                __vector_25
+                0x0000000000002f8e                __vector_11
+                0x0000000000002f8e                __vector_13
+                0x0000000000002f8e                __vector_17
+                0x0000000000002f8e                __vector_19
+                0x0000000000002f8e                __vector_7
+                0x0000000000002f8e                __vector_27
+                0x0000000000002f8e                __vector_5
+                0x0000000000002f8e                __vector_4
+                0x0000000000002f8e                __vector_9
+                0x0000000000002f8e                __vector_2
+                0x0000000000002f8e                __vector_21
+                0x0000000000002f8e                __vector_15
+                0x0000000000002f8e                __vector_29
+                0x0000000000002f8e                __vector_8
+                0x0000000000002f8e                __vector_26
+                0x0000000000002f8e                __vector_14
+                0x0000000000002f8e                __vector_10
+                0x0000000000002f8e                __vector_16
+                0x0000000000002f8e                __vector_18
+                0x0000000000002f8e                __vector_20
 
-.text._Exit     0x0000000000002e2e        0x4
- .text._Exit    0x0000000000002e2e        0x4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
-                0x0000000000002e2e                _Exit
+.text._Exit     0x0000000000002f92        0x4
+ .text._Exit    0x0000000000002f92        0x4 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(_Exit.o)
+                0x0000000000002f92                _Exit
 
 .text.__dummy_fini
-                0x0000000000002e32        0x2
+                0x0000000000002f96        0x2
  .text.__dummy_fini
-                0x0000000000002e32        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x0000000000002e32                _fini
+                0x0000000000002f96        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x0000000000002f96                _fini
 
 .text.__dummy_funcs_on_exit
-                0x0000000000002e34        0x2
+                0x0000000000002f98        0x2
  .text.__dummy_funcs_on_exit
-                0x0000000000002e34        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x0000000000002e34                __funcs_on_exit
+                0x0000000000002f98        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x0000000000002f98                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x0000000000002e36        0x2
+                0x0000000000002f9a        0x2
  .text.__dummy_simulator_exit
-                0x0000000000002e36        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
-                0x0000000000002e36                __simulator_exit
+                0x0000000000002f9a        0x2 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a(exit.o)
+                0x0000000000002f9a                __simulator_exit
 
-.data.Motor     0x0000000000803802        0x8 load address 0x0000000000002e38
+.data.Motor     0x0000000000803802        0x8 load address 0x0000000000002f9c
  .data.Motor    0x0000000000803802        0x8 build/default/debug/stepper.o
                 0x0000000000803802                Motor
 
-.data.WORK      0x000000000080380a        0x8 load address 0x0000000000002e40
+.data.WORK      0x000000000080380a        0x8 load address 0x0000000000002fa4
  .data.WORK     0x000000000080380a        0x8 build/default/debug/WORK.o
                 0x000000000080380a                WORK

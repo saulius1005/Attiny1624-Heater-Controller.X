@@ -27,24 +27,30 @@ void StepperStep()
     {
         case STEP_IDLE:
             PORTA.OUTSET = PIN2_bm;
-            RTC_ON(Motor.stepwidth);
+            //RTC_ON(Motor.stepwidth);
+            TCA0_ON(Motor.stepwidth);
             Motor.state = STEP_HIGH;
             break;
 
         case STEP_HIGH:
-            if(RTC.INTFLAGS & RTC_OVF_bm)
+            //if(RTC.INTFLAGS & RTC_OVF_bm)
+            if(TCA0.SINGLE.INTFLAGS & TCA_SINGLE_OVF_bm)
             {
-                RTC.INTFLAGS = RTC_OVF_bm;
+                //RTC.INTFLAGS = RTC_OVF_bm;
+                TCA0.SINGLE.INTFLAGS = TCA_SINGLE_OVF_bm;
                 PORTA.OUTCLR = PIN2_bm;
-                RTC_ON(Motor.stepwidth);
+                //RTC_ON(Motor.stepwidth);
+                TCA0_ON(Motor.stepwidth);
                 Motor.state = STEP_LOW;
             }
             break;
 
         case STEP_LOW:
-            if(RTC.INTFLAGS & RTC_OVF_bm)
+            //if(RTC.INTFLAGS & RTC_OVF_bm)
+            if(TCA0.SINGLE.INTFLAGS & TCA_SINGLE_OVF_bm)
             {
-                RTC.INTFLAGS = RTC_OVF_bm;
+                //RTC.INTFLAGS = RTC_OVF_bm;
+                TCA0.SINGLE.INTFLAGS = TCA_SINGLE_OVF_bm;
                 Motor.steps--;
                 Motor.state = STEP_IDLE;
             }

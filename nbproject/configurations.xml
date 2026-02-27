@@ -44,6 +44,7 @@
       <itemPath>WORK.c</itemPath>
       <itemPath>WORK.h</itemPath>
       <itemPath>WORKVar.h</itemPath>
+      <itemPath>TCA.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

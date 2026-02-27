@@ -43,6 +43,10 @@ extern "C" {
     void RTC_ON(uint32_t period_us);
     void RTC_OFF();
     
+    void TCA0_init();
+    void TCA0_ON(uint32_t period_us);
+    void TCA0_OFF();
+    
     void ADC0_init();
     uint16_t ADC0_Read(uint8_t channel);
     
