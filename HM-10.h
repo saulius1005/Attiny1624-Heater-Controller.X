@@ -12,8 +12,10 @@
 extern "C" {
 #endif
 
+#define COMMAND_LENGTH 16    
+    
 typedef struct {
-        enable_state_t Enable;
+        enable_state_t Enable;      
     } HM10_data;
 
     extern HM10_data HM10;

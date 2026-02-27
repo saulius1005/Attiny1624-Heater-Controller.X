@@ -48,7 +48,12 @@ extern "C" {
     
     void LM35_Read();
     
+    void USART0_init();
+    char USART0_readChar();
+    void USART_printf(const char *format, ...);
+    
     void Bluetooth_init(enable_state_t en);
+    void BLTReceiver();
     
 
 

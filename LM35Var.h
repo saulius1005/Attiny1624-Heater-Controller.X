@@ -16,7 +16,7 @@ extern "C" {
 #endif
 
 sensor_data TempSensor[SENSOR_COUNT] = {
-    [CWTS] = {
+    [RATS] = {
         .TempC = 0
     },
     [HWTS] = {

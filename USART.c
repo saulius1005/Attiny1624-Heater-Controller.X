@@ -11,11 +11,6 @@ void USART0_sendChar(char c){
 	USART0.TXDATAL = c;
 }
 
-int USART0_printChar(char c, FILE *stream){
-	USART0_sendChar(c);
-	return 0;
-}
-
 void USART0_sendString(char *str){
 	for(size_t i = 0; i < strlen(str); i++){
 		USART0_sendChar(str[i]);

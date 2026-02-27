@@ -14,12 +14,12 @@ extern "C" {
 
 #define SENSOR_COUNT 2
 #define HOT_WATER_TEMPERATURE_CHANNEL ADC_MUXPOS_AIN5_gc
-#define COLD_WATER_TEMPERATURE_CHANNEL ADC_MUXPOS_AIN6_gc
+#define ROOM_AIR_TEMPERATURE_CHANNEL ADC_MUXPOS_AIN6_gc
 
     
     typedef enum {
-        CWTS = 0, //cold water temperature sensor
-        HWTS //hot temperature sensor
+        RATS = 0, //room air temperature sensor
+        HWTS //hot water temperature sensor
     } sensor_t;
     
     typedef struct {
