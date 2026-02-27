@@ -1,13 +1,12 @@
 #include "settings.h"
 
-void RTC_ON(uint32_t period_us){
+void RTC_ON(uint16_t seconds){
     while (RTC.STATUS > 0);  
-    RTC.CLKSEL = RTC_CLKSEL_INT32K_gc;
+    RTC.CLKSEL = RTC_CLKSEL_INT1K_gc;
 
-    // ticks = us * 32768 / 1 000 000
-    RTC.PER = (uint16_t)((period_us * 32768UL) / 1000000UL); //lowest step is 30.5us and highest ~2sec
+    RTC.PER = seconds - 1; //lowest step is 2s, highest is 65535seconds ()
     RTC.CNT = 0;
-    RTC.CTRLA = RTC_RTCEN_bm | RTC_PRESCALER_DIV1_gc;
+    RTC.CTRLA = RTC_RTCEN_bm | RTC_PRESCALER_DIV1024_gc;
 }
 
 /*

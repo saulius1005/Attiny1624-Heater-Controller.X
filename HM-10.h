@@ -14,12 +14,14 @@ extern "C" {
 
 #define COMMAND_LENGTH 14  
 #define SHORT_COMMAND_LENGTH 6
+#define DATA_UPDATE_PERIOD 5 //time in seconds
     
 typedef struct {
-        enable_state_t Enable;      
-    } HM10_data;
+    enable_state_t Enable;     
+    uint8_t updete_data;
+} HM10_data;
 
-    extern HM10_data HM10;
+extern HM10_data HM10;
 
 
 #ifdef	__cplusplus

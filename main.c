@@ -20,9 +20,9 @@ int main() {
         WORK.ProgMode = 1;
     } 
     else{ //and if not program continue regular work
-        Stepper_enable(ON);
-        StepperDir(OPEN);
-        Motor.steps = 6400; //full circle 1/32 (200*32 = 6400)        
+        //Stepper_enable(ON);
+        //StepperDir(OPEN);
+        //Motor.steps = 1600; //6400- full circle 1/32 (200*32 = 6400)        
     }
     while(1){
         WorkingMode();

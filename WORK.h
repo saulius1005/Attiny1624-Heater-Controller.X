@@ -12,6 +12,13 @@
 extern "C" {
 #endif
 
+typedef enum {
+        CLOSED = 0,
+        CLOSING,
+        OPENED,
+        OPENING
+    } valve_action_t;    
+    
 typedef struct {   
     uint8_t ProgMode;
     uint8_t Room_air_temp_set_point;
@@ -19,6 +26,7 @@ typedef struct {
     uint16_t Open_angle_set_point;
     uint16_t Close_angle_set_point;
     uint8_t Angle_deviation;
+    valve_action_t Valve_state;
 } Work_data;
 
 extern Work_data WORK;

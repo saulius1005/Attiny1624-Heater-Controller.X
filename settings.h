@@ -40,7 +40,7 @@ extern "C" {
     void StepperDir(stepperDIR_t dir);
     void StepperStep();
     
-    void RTC_ON(uint32_t period_us);
+    void RTC_ON(uint16_t seconds);
     void RTC_OFF();
     
     void TCA0_init();
@@ -60,6 +60,7 @@ extern "C" {
     
     void Bluetooth_init(enable_state_t en);
     void BLTReceiver();
+    void TimePassUpdate();
     
     uint8_t crc8_cdma2000(uint8_t *data, uint8_t len);
     bool verify_crc8_cdma2000(uint8_t *data, uint8_t len, uint8_t received_crc);

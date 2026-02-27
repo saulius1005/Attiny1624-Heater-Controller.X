@@ -87,3 +87,36 @@ void BLTReceiver() {
 	}
 }
 
+void TimePassUpdate(){
+    if(HM10.updete_data == 0){
+        RTC_ON(DATA_UPDATE_PERIOD);
+        HM10.updete_data = 1;
+    }
+    if(HM10.updete_data == 1){
+        if(RTC.INTFLAGS & RTC_OVF_bm){
+            RTC.INTFLAGS = RTC_OVF_bm;          
+            USART_printf("Kambario temperatûra %d C°\r\n", (LM35[RATS].TempC + 5) / 10);
+            USART_printf("Karðto vandens temperatûra %d C°\r\n", (LM35[HWTS].TempC + 5) / 10);
+            USART_printf("Sklendës kampas %d°\r\n", MT6701.angle);  
+            USART_printf("Sklendës padëtis: ");  
+            if((MT6701.angle <= (WORK.Open_angle_set_point + WORK.Angle_deviation)) && (MT6701.angle >= (WORK.Open_angle_set_point - WORK.Angle_deviation)) ){
+                USART_printf("Atidaryta\r\n"); 
+            }
+            else if((MT6701.angle <= WORK.Close_angle_set_point + WORK.Angle_deviation) && (MT6701.angle >= WORK.Close_angle_set_point - WORK.Angle_deviation)){
+                USART_printf("Uþdaryta\r\n");
+            }
+            else{
+                USART_printf("Viduryje\r\n");
+            }
+            USART_printf("Sklendës bûsena %d°\r\n", WORK.Valve_state); 
+            if(PORTA.OUT & PIN4_bm)
+                USART_printf("Pompa Ájungta\r\n");
+            else
+                USART_printf("Pompa Iðjungta\r\n");
+            USART_printf("\r\n");
+            HM10.updete_data = 0;
+            RTC_OFF();
+        }
+    }
+}
+
