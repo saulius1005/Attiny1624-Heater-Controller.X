@@ -12,37 +12,14 @@
 extern "C" {
 #endif
     
-    /*typedef enum {
-        OFF = 0,
-        ON  = 1
-    } stepper_state_e;
-
-    typedef enum {
-        CCW = 0,
-        CW  = 1
-    } stepper_dir_e;
-
-    typedef uint8_t stepper_state_t;
-    typedef uint8_t stepperDIR_t;
-
-    typedef struct {
-        stepper_state_t Enable;
-        stepperDIR_t    Direction;
-        stepper_state_t Step;
-        uint16_t steps;
-        uint16_t stepwidth;
-        uint8_t stepHigh;
-        uint8_t stepLow;
-    } Stepper_data;*/
-    
     typedef enum {
         OFF = 0,
         ON
-    } stepper_state_t;
+    } enable_state_t;
 
     typedef enum {
-        CCW = 0,
-        CW
+        CLOSE = 0,
+        OPEN
     } stepperDIR_t;
 
     typedef enum {
@@ -52,9 +29,9 @@ extern "C" {
     } step_state_t;
 
     typedef struct {
-        stepper_state_t Enable;
+        enable_state_t Enable;
         stepperDIR_t    Direction;
-        stepper_state_t Step;
+        enable_state_t Step;
         uint16_t steps;
         uint16_t stepwidth;
         step_state_t state;

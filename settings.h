@@ -23,14 +23,17 @@ extern "C" {
 #include <math.h>
 #include "CLK.h"    
 #include "ADC.h"    
+#include "USART.h"
 #include "stepper.h"
 #include "LM35.h"
 #include "mt6701.h"
+#include "HM-10.h"
 
 
 
     void GPIO_init();
-    void Stepper_enable(stepper_state_t en);
+    void Stepper_enable(enable_state_t en);
+    void StepperDir(stepperDIR_t dir);
     void StepperStep();
     
     void RTC_ON(uint32_t period_us);
@@ -41,7 +44,11 @@ extern "C" {
     void ADC0_init();
     uint16_t ADC0_Read(uint8_t channel);
     
-    uint16_t MT6701_Read();
+    void MT6701_Read();
+    
+    void LM35_Read();
+    
+    void Bluetooth_init(enable_state_t en);
     
 
 

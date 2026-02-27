@@ -17,7 +17,7 @@ extern "C" {
 
 Stepper_data Motor = {
 .Enable = OFF,
-.Direction = CW,
+.Direction = CLOSE,
 .Step = OFF,
 .steps = 0,
 .stepwidth = 31, //31us (30.5us is lowest)

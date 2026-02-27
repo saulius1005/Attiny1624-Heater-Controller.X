@@ -24,7 +24,7 @@ build/default/production/main.o.d build/default/production/main.o: main.c \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- stepper.h LM35.h mt6701.h
+ USART.h stepper.h LM35.h mt6701.h HM-10.h
 
 settings.h:
 
@@ -80,8 +80,12 @@ CLK.h:
 
 ADC.h:
 
+USART.h:
+
 stepper.h:
 
 LM35.h:
 
 mt6701.h:
+
+HM-10.h:

@@ -13,14 +13,13 @@ int main() {
     GPIO_init();
     ADC0_init();
     Stepper_enable(ON);
-    Motor.steps = 6400; //full circle
+    StepperDir(OPEN);
+    Motor.steps = 6400; //full circle 1/32 (200*32 = 6400)
     
     while(1){
         StepperStep();
-        if(Motor.steps == 0){
-            Stepper_enable(OFF);
-        }
-        MT6701.ADC_Value = MT6701_Read();
+        MT6701_Read();
+        LM35_Read();
     }
 }
 

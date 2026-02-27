@@ -33,6 +33,12 @@
       <itemPath>mt6701.c</itemPath>
       <itemPath>mt6701.h</itemPath>
       <itemPath>mt6701Var.h</itemPath>
+      <itemPath>USART.c</itemPath>
+      <itemPath>USART.h</itemPath>
+      <itemPath>HM-10.c</itemPath>
+      <itemPath>HM-10.h</itemPath>
+      <itemPath>HM10Var.h</itemPath>
+      <itemPath>LM35Var.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -175,6 +181,9 @@
         <property key="program-the-device-with-default-config-words" value="false"/>
         <property key="remove-unused-sections" value="true"/>
       </HI-TECH-LINK>
+      <Tool>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
+      </Tool>
       <XC8-CO>
         <property key="coverage-enable" value=""/>
         <property key="stack-guidance" value="false"/>
