@@ -23,24 +23,44 @@ inline uint16_t hex2uint(const char *p, uint8_t len) {//ANCII Hex up to 4 symbol
 	return val;
 }
 
-void BTDataSplitter(char *command) {
-    //uint8_t crc_received = (uint8_t)strtol(command + 3, NULL, 16);
+void BTDataSplitter(char *command, uint8_t len) {
     
-    uint8_t crc_calculated = crc8_cdma2000((uint8_t*)command, 3); 
-    uint8_t crc_received = hex2uint(&command[3], 2); //start from 3rd symbol of "TST"
+    uint8_t crc_calculated = crc8_cdma2000((uint8_t*)command, len - 2);// calculate crc 
+    uint8_t crc_received = hex2uint(&command[len - 2], 2); //start from last actual command sybol
     
-    USART_printf("data crc: %x \r\n", crc_calculated);
+    if(crc_calculated != crc_received){ //if crc bad send error message and do nothing else
+        USART_printf("Bad CRC\r\n");
+        return;
+    }    
     
-    USART_printf("crc received: %x \r\n", crc_received);
-    
-    USART_printf("crc received: %s \r\n", crc_calculated == crc_received? "ok" : "no");
-    
-	/*if(strcmp(command,"TST") == 0){
-        USART_printf("TST crc: %x \r\n", crc8_cdma2000_id());
-     }
-     else  if(strcmp(command,"OK+CONN") == 0){
-         USART_printf("Connected\r\n");
-     }*/
+    if(len == COMMAND_LENGTH){ //exp: DT14505A0B4A63 is 12 symbols in total
+        char *p = command + 2; //remove DT
+        WORK.Room_air_temp_set_point    = hex2uint(p, 2); p += 2; //FF 0-255 (0 - 30C)
+        WORK.Temp_deviation             = hex2uint(p, 1); p += 1; //F 0-15 (0-10C)
+        WORK.Close_angle_set_point      = hex2uint(p, 3); p += 3; //FFF 0-4095 (0-360 degree)
+        WORK.Open_angle_set_point       = hex2uint(p, 3); p += 3; //FFF 0-4095 (0-360 degree)
+        WORK.Angle_deviation            = hex2uint(p, 1); //F 0-15 (0-15 degree)    
+        USART_printf("Duomenys gauti!\r\n");
+    }
+    else if(strncmp(command, "MESA2A", SHORT_COMMAND_LENGTH) == 0){
+        MT6701_Read();
+        USART_printf("Matuojamas kampas yra: %d°\r\n", MT6701.angle);
+    }
+    else if(strncmp(command, "REDT10", SHORT_COMMAND_LENGTH) == 0){
+        LM35_Read();
+        USART_printf("Matuoja temperatûra yra: \nKambario: %d C°\nK.Vandens: %d C°\r\n", (LM35[RATS].TempC + 5) / 10, (LM35[HWTS].TempC + 5) / 10); //rounding by 0.5 degree centigrade
+    }
+    else if(strncmp(command, "PTSTE8", SHORT_COMMAND_LENGTH) == 0){
+        PORTA.OUTTGL = PIN4_bm;
+        if(PORTA.OUT & PIN4_bm)
+            USART_printf("Pompa Ájungta\r\n");
+        else
+            USART_printf("Pompa Iðjungta\r\n");
+    }
+    else{
+        USART_printf("Bad command\r\n");
+    }
+   
 }
 
 void BLTReceiver() {
@@ -51,12 +71,12 @@ void BLTReceiver() {
         char c = USART0_readChar();
 		if (start) {		
 			if (c == '>') { // If received data end symbol
-				start = 0;
-				command[index] = '\0';
-				index = 0;
-					BTDataSplitter(command); // Execute the received command //comment when testing lines below
+                BTDataSplitter(command, index); // Execute the received command //comment when testing lines below
+                start = 0;
+                command[index] = '\0';
+                index = 0;                    
 				break;
-				} else if (index < COMMAND_LENGTH) {
+			} else if (index < COMMAND_LENGTH) {
 				command[index++] = c; // Store received character in command array
 			}
 		}

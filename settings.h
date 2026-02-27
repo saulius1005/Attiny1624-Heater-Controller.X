@@ -14,6 +14,7 @@ extern "C" {
     
 #include <xc.h>
 #include <avr/cpufunc.h>
+#include <avr/eeprom.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -28,18 +29,19 @@ extern "C" {
 #include "LM35.h"
 #include "mt6701.h"
 #include "HM-10.h"
-
+#include "WORK.h"
 
 
     void GPIO_init();
+    
+    void CLOCK_INHF_clock_init();    
+    
     void Stepper_enable(enable_state_t en);
     void StepperDir(stepperDIR_t dir);
     void StepperStep();
     
     void RTC_ON(uint32_t period_us);
     void RTC_OFF();
-    
-    void CLOCK_INHF_clock_init();
     
     void ADC0_init();
     uint16_t ADC0_Read(uint8_t channel);
@@ -57,6 +59,8 @@ extern "C" {
     
     uint8_t crc8_cdma2000(uint8_t *data, uint8_t len);
     bool verify_crc8_cdma2000(uint8_t *data, uint8_t len, uint8_t received_crc);
+    
+    void WorkingMode();
     
 
 

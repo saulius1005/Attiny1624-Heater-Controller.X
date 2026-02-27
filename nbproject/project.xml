@@ -6,7 +6,7 @@
             <name>Attiny1624-Heater-Controller</name>
             <creation-uuid>bf22a9dd-3f46-4996-a5ee-4a4cae4a1b74</creation-uuid>
             <make-project-type>0</make-project-type>
-            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <sourceEncoding>windows-1257</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>

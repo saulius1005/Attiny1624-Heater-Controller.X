@@ -26,7 +26,7 @@ extern "C" {
         uint16_t TempC; //cold or hot temperature in C (not floating point ex.: 20.1C is 201)
     } sensor_data;
 
-    extern sensor_data TempSensor[SENSOR_COUNT];
+    extern sensor_data LM35[SENSOR_COUNT];
 
 #ifdef	__cplusplus
 }

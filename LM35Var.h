@@ -15,7 +15,7 @@
 extern "C" {
 #endif
 
-sensor_data TempSensor[SENSOR_COUNT] = {
+sensor_data LM35[SENSOR_COUNT] = {
     [RATS] = {
         .TempC = 0
     },

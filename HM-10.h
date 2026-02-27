@@ -12,7 +12,8 @@
 extern "C" {
 #endif
 
-#define COMMAND_LENGTH 16    
+#define COMMAND_LENGTH 14  
+#define SHORT_COMMAND_LENGTH 6
     
 typedef struct {
         enable_state_t Enable;      

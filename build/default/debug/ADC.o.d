@@ -17,13 +17,15 @@ build/default/debug/ADC.o.d build/default/debug/ADC.o: ADC.c settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h \
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\eeprom.h \
+ c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stddef.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- USART.h stepper.h LM35.h mt6701.h HM-10.h
+ USART.h stepper.h LM35.h mt6701.h HM-10.h WORK.h
 
 settings.h:
 
@@ -63,6 +65,10 @@ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h:
 
+c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\eeprom.h:
+
+c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stddef.h:
+
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h:
@@ -88,3 +94,5 @@ LM35.h:
 mt6701.h:
 
 HM-10.h:
+
+WORK.h:
