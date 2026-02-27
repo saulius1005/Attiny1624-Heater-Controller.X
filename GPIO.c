@@ -18,4 +18,6 @@ void GPIO_init(){
                  | PIN4_bm; //Circulation pump output
     PORTB.DIRSET = PIN0_bm  //Bluetooth module enable output
                  | PIN2_bm; //UART TX output
+    
+    PORTA.OUTSET = PIN3_bm; //keep stepper turned off
 }

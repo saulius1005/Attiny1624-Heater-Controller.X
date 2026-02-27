@@ -39,6 +39,8 @@
       <itemPath>HM-10.h</itemPath>
       <itemPath>HM10Var.h</itemPath>
       <itemPath>LM35Var.h</itemPath>
+      <itemPath>CRC.c</itemPath>
+      <itemPath>CRC.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -86,6 +88,9 @@
       </makeCustomizationType>
       <AtmelIceTool>
         <property key="debugoptions.useswbreakpoints" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-1fff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/Saulius/Documents/Atmel Studio/MPLAB XIDE/Attiny1624-Heater-Controller.X/debug/default/Attiny1624-Heater-Controller_ptg"/>
       </AtmelIceTool>
       <HI-TECH-COMP>
         <property key="additional-warnings" value="true"/>

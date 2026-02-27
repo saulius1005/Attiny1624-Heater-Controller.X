@@ -14,8 +14,7 @@ int main() {
     USART0_init();
     ADC0_init();
     Bluetooth_init(ON);
-    Stepper_enable(OFF);
- 
+    
     uint8_t progmode = 1;
     
     if(!(PORTB.IN & PIN1_bm)){ //if button pressed at the same time as power up then we enabling programming mode

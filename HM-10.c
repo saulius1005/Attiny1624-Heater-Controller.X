@@ -8,13 +8,39 @@ void Bluetooth_init(enable_state_t en){
     PORTB.OUTCLR = PIN0_bm;
 }
 
+inline uint8_t hexchar2val(char c) {// Fastest ANCII HEX conversion to uint8_t (support  A-F a-f) one simbol
+	if (c >= '0' && c <= '9') return c - '0';
+	if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+	if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+	return 0;
+}
+
+inline uint16_t hex2uint(const char *p, uint8_t len) {//ANCII Hex up to 4 symbols converter
+	uint16_t val = 0;
+	for (uint8_t i = 0; i < len; i++) {
+		val = (val << 4) | hexchar2val(p[i]);
+	}
+	return val;
+}
+
 void BTDataSplitter(char *command) {
-	if(strcmp(command,"TST") == 0){
-        USART_printf("TST back \r\n");
+    //uint8_t crc_received = (uint8_t)strtol(command + 3, NULL, 16);
+    
+    uint8_t crc_calculated = crc8_cdma2000((uint8_t*)command, 3); 
+    uint8_t crc_received = hex2uint(&command[3], 2); //start from 3rd symbol of "TST"
+    
+    USART_printf("data crc: %x \r\n", crc_calculated);
+    
+    USART_printf("crc received: %x \r\n", crc_received);
+    
+    USART_printf("crc received: %s \r\n", crc_calculated == crc_received? "ok" : "no");
+    
+	/*if(strcmp(command,"TST") == 0){
+        USART_printf("TST crc: %x \r\n", crc8_cdma2000_id());
      }
      else  if(strcmp(command,"OK+CONN") == 0){
          USART_printf("Connected\r\n");
-     }
+     }*/
 }
 
 void BLTReceiver() {
