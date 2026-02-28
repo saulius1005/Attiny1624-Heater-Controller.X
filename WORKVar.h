@@ -18,11 +18,11 @@ extern "C" {
 
 Work_data WORK = {
     .ProgMode = 0, //regular mode
-    .Room_air_temp_set_point = 28, //20.0C
+    .Room_air_temp_set_point = 25, //20.0C
     .Temp_deviation = 1, //5.0C
     .Close_angle_set_point = 90,
     .Open_angle_set_point = 180,
-    .Angle_deviation = 5, //5 degree
+    .Angle_deviation = 2, //5 degree
     .Valve_state = CLOSED //closed valve state
 };
 

@@ -1,4 +1,5 @@
-build/default/debug/RTC.o.d build/default/debug/RTC.o: RTC.c settings.h \
+build/default/production/TCB.o.d build/default/production/TCB.o: TCB.c \
+ settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\io.h \

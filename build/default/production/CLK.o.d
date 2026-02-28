@@ -25,8 +25,10 @@ build/default/production/CLK.o.d build/default/production/CLK.o: CLK.c \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h ADC.h \
- USART.h stepper.h LM35.h mt6701.h HM-10.h WORK.h
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h CLK.h \
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay.h \
+ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay_basic.h \
+ ADC.h USART.h stepper.h LM35.h mt6701.h HM-10.h WORK.h
 
 settings.h:
 
@@ -83,6 +85,10 @@ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h:
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h:
 
 CLK.h:
+
+c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay.h:
+
+c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay_basic.h:
 
 ADC.h:
 

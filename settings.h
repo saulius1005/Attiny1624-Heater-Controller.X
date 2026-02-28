@@ -23,6 +23,7 @@ extern "C" {
 #include <stdlib.h>
 #include <math.h>
 #include "CLK.h"    
+#include <util/delay.h>    
 #include "ADC.h"    
 #include "USART.h"
 #include "stepper.h"
@@ -46,6 +47,10 @@ extern "C" {
     void TCA0_init();
     void TCA0_ON(uint32_t period_us);
     void TCA0_OFF();
+    
+    void TCB0_init();
+    void TCB0_OFF();
+    void TCB0_ON(uint32_t period_ms);
     
     void ADC0_init();
     uint16_t ADC0_Read(uint8_t channel);

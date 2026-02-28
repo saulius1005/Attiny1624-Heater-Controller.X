@@ -60,16 +60,21 @@ void Controll(){
 
     bool roomNeedsHeat = roomTemp < (WORK.Room_air_temp_set_point - WORK.Temp_deviation);
     bool roomTooHot    = roomTemp > (WORK.Room_air_temp_set_point + WORK.Temp_deviation);
+    
+    int16_t erroro = 0;
+    int16_t errorc = 0;
+    
+    
 
     switch(WORK.Valve_state)
     {
         case CLOSED: //if valve closed and water is hot enough set stepper direction to open valve and change state to opening
-            if(waterHotEnough){
+            if(waterHotEnough /*&& !roomTooHot*/){
+                PORTA.OUTCLR = PIN4_bm; //turn off the pump before opening the valve                 
                 StepperDir(OPEN);
                 Stepper_enable(ON);
                 Motor.steps = 6400; //ideal case should enough 1600, but set more if stepper struglle to spin valve
                 WORK.Valve_state = OPENING;
-                PORTA.OUTCLR = PIN4_bm; //turn off the pump before opening the valve 
             }
             else{
                 Stepper_enable(OFF);
@@ -77,41 +82,72 @@ void Controll(){
         break;
 
         case OPENED: //if valve opened and water is too cold or room too hot set stepper direction to close valve and change state to closing
-            if(waterTooCold || roomTooHot){               
-                //if(roomTooHot){ //if too hot turn the pump off
-                    PORTA.OUTCLR = PIN4_bm;     // Pump OFF
-                //} 
-                StepperDir(CLOSE);
-                Stepper_enable(ON);
-                Motor.steps = 6400;
-                WORK.Valve_state = CLOSING;          
-            }
-            else{
-                Stepper_enable(OFF);
-                if(roomNeedsHeat){ //if room is cold and valve is fully opened turn on the pump
-                    PORTA.OUTSET = PIN4_bm;     // Pump ON
+            if(waterTooCold){          
+                static uint32_t ticker = 50000; //~6seconds
+                PORTA.OUTCLR = PIN4_bm;     // Pump OFF
+                //_delay_ms(5000); //lazy delay- halt cpu only for this time
+                if(ticker > 0)
+                    ticker--;
+                else{
+                    StepperDir(CLOSE);
+                    Stepper_enable(ON);
+                    Motor.steps = 6400;
+                    WORK.Valve_state = CLOSING;     
+                    ticker = 50000;
                 }
+         
+            }
+            else if(roomTooHot){
+                Stepper_enable(OFF);
+                PORTA.OUTCLR = PIN4_bm;     // Pump OFF only
+            }
+            else if(roomNeedsHeat){ //if room is cold and valve is fully opened turn on the pump
+                Stepper_enable(OFF);
+                PORTA.OUTSET = PIN4_bm;     // Pump ON
             }
         break;
 
         case OPENING: //if valve opening checking mt6701 angle till it reach open state
-            if(MT6701.angle != WORK.Open_angle_set_point){
+            erroro = WORK.Open_angle_set_point - MT6701.angle;
+            if(erroro > 0){
+                StepperStep();  // dar reikia atidaryti
+            }
+            else{
+                // kampas pasiektas arba virðytas
+                if(abs(erroro) <= WORK.Angle_deviation){
+                    WORK.Valve_state = OPENED;
+                    Motor.steps = 0;
+                    Stepper_enable(OFF);
+                }
+            }
+            /*if(MT6701.angle != WORK.Open_angle_set_point){
                 StepperStep();
             }
             else{
                 WORK.Valve_state = OPENED;
                 Motor.steps = 0; //reseting steps 
-            }
+            }*/
         break;
 
         case CLOSING: //if valve closing checking mt6701 angle till it reach close state
-            if(MT6701.angle != WORK.Close_angle_set_point){
+            errorc = MT6701.angle - WORK.Close_angle_set_point;
+            if(errorc > 0){
+                StepperStep();
+            }
+            else{
+                if(abs(errorc) <= WORK.Angle_deviation){
+                    WORK.Valve_state = CLOSED;
+                    Motor.steps = 0;
+                    Stepper_enable(OFF);
+                }
+            }
+            /*if(MT6701.angle != WORK.Close_angle_set_point){
                 StepperStep();
             }
             else{
                 WORK.Valve_state = CLOSED;
                 Motor.steps = 0;
-            }
+            }*/
         break;
     }
 }
