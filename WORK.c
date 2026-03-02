@@ -1,56 +1,6 @@
 #include "settings.h"
 #include "WORKVar.h"
 
-/*void Controll(){
-    uint8_t baseRoomTemp = (LM35[RATS].TempC + 5) / 10;     
-    uint8_t baseWaterTemp = (LM35[HWTS].TempC + 5) / 10;
-    
-    if(baseWaterTemp > (WORK.Room_air_temp_set_point + WORK.Temp_deviation)){//if hot water temperature is above set point + deviation, open the valve
-        StepperDir(OPEN); //set stepper spinning direction
-        if(WORK.Valve_state == CLOSED){ //if valve was closed before set steps count once
-            Motor.steps = 6400; //for 90 degree angle enough 1600. Add more if stepper struggle to spin valve and missing steps  
-            WORK.Valve_state = OPENING; // set to open state
-        }
-    }
-    else if(baseWaterTemp < (WORK.Room_air_temp_set_point - WORK.Temp_deviation)){//if hot water temperature is below set point - deviation, close the valve
-        StepperDir(CLOSE); //set stepper spinning direction
-        if(WORK.Valve_state == OPENED){ //if valve was closed before set steps count once
-            Motor.steps = 6400; //for 90 degree angle enough 1600
-            WORK.Valve_state = CLOSING; // set to open state
-        }
-    }
-    
-    if(WORK.Valve_state == OPENING){ //opening valve...
-        if(WORK.Open_angle_set_point != MT6701.angle){
-            StepperStep();
-        }
-        else{ //till it will be opened
-            WORK.Valve_state = OPENED;
-            Motor.steps = 0; //if open reset steps count
-        }
-    }
-    else if(WORK.Valve_state == CLOSING){ //closing valve...
-         if(WORK.Close_angle_set_point != MT6701.angle){
-            StepperStep();
-        }
-         else{ //till it will be closed
-            WORK.Valve_state = CLOSED;
-            Motor.steps = 0;//if open reset steps count
-        }       
-    }
-    
-    //if( (baseRoomTemp <= (WORK.Room_air_temp_set_point + WORK.Temp_deviation)) && (baseRoomTemp >= (WORK.Room_air_temp_set_point - WORK.Temp_deviation)) && (WORK.Valve_state == OPENED) ){ // if room temperature in between set point+ deviation turn on pump
-    //    PORTA.OUTSET = PIN4_bm;//turn on the pump or keep it runing
-   // }
-     //else
-    if( (baseRoomTemp > (WORK.Room_air_temp_set_point + WORK.Temp_deviation))  && (WORK.Valve_state == CLOSED) ){//if room temperature is above set point + deviation and valve is closed, turn off the pump
-        PORTA.OUTCLR = PIN4_bm;//turn off the pump
-    }
-    else if( (baseRoomTemp < (WORK.Room_air_temp_set_point - WORK.Temp_deviation))  && (WORK.Valve_state == OPENED)){//if room temperature is below set point - deviation and valve is opened, turn on the pump
-        PORTA.OUTSET = PIN4_bm;//turn on the pump
-    }
-}*/
-
 void Controll(){
     uint8_t roomTemp  = (LM35[RATS].TempC + 5) / 10; //rounding up room temperature
     uint8_t waterTemp = (LM35[HWTS].TempC + 5) / 10; //rounding up water teperature
@@ -60,11 +10,6 @@ void Controll(){
 
     bool roomNeedsHeat = roomTemp < (WORK.Room_air_temp_set_point - WORK.Temp_deviation);
     bool roomTooHot    = roomTemp > (WORK.Room_air_temp_set_point + WORK.Temp_deviation);
-    
-    int16_t erroro = 0;
-    int16_t errorc = 0;
-    
-    
 
     switch(WORK.Valve_state)
     {
@@ -85,8 +30,7 @@ void Controll(){
             if(waterTooCold){          
                 static uint32_t ticker = 50000; //~6seconds
                 PORTA.OUTCLR = PIN4_bm;     // Pump OFF
-                //_delay_ms(5000); //lazy delay- halt cpu only for this time
-                if(ticker > 0)
+                if(ticker > 0) //simple poled delay
                     ticker--;
                 else{
                     StepperDir(CLOSE);
@@ -108,46 +52,23 @@ void Controll(){
         break;
 
         case OPENING: //if valve opening checking mt6701 angle till it reach open state
-            erroro = WORK.Open_angle_set_point - MT6701.angle;
-            if(erroro > 0){
-                StepperStep();  // dar reikia atidaryti
-            }
-            else{
-                // kampas pasiektas arba virðytas
-                if(abs(erroro) <= WORK.Angle_deviation){
-                    WORK.Valve_state = OPENED;
-                    Motor.steps = 0;
-                    Stepper_enable(OFF);
-                }
-            }
-            /*if(MT6701.angle != WORK.Open_angle_set_point){
+            if(MT6701.angle != WORK.Open_angle_set_point){
                 StepperStep();
             }
             else{
                 WORK.Valve_state = OPENED;
                 Motor.steps = 0; //reseting steps 
-            }*/
+            }
         break;
 
         case CLOSING: //if valve closing checking mt6701 angle till it reach close state
-            errorc = MT6701.angle - WORK.Close_angle_set_point;
-            if(errorc > 0){
-                StepperStep();
-            }
-            else{
-                if(abs(errorc) <= WORK.Angle_deviation){
-                    WORK.Valve_state = CLOSED;
-                    Motor.steps = 0;
-                    Stepper_enable(OFF);
-                }
-            }
-            /*if(MT6701.angle != WORK.Close_angle_set_point){
+            if(MT6701.angle != WORK.Close_angle_set_point){
                 StepperStep();
             }
             else{
                 WORK.Valve_state = CLOSED;
                 Motor.steps = 0;
-            }*/
+            }
         break;
     }
 }
@@ -156,9 +77,8 @@ void WorkingMode(){
     if(WORK.ProgMode == 1){ //if programing mode enabled
             BLTReceiver(); //read bluetooth
         }
-        else{
+    else{ //if it is regular mode controll stepper, read mt6701 angle, read hot water and room air tmperatures (LM35) and send regular raport every 5 seconds
             Controll();
-            //StepperStep();
             MT6701_Read();
             LM35_Read(); 
             TimePassUpdate();

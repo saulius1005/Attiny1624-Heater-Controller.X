@@ -41,36 +41,34 @@ extern "C" {
     void StepperDir(stepperDIR_t dir);
     void StepperStep();
     
-    void RTC_ON(uint16_t seconds);
+    void RTC_ON(uint16_t seconds); // used for 5 seconds data report sending
     void RTC_OFF();
     
-    void TCA0_init();
-    void TCA0_ON(uint32_t period_us);
+    void TCA0_init(); 
+    void TCA0_ON(uint32_t period_us); //used for stepper pulses
     void TCA0_OFF();
-    
-    void TCB0_init();
-    void TCB0_OFF();
-    void TCB0_ON(uint32_t period_ms);
     
     void ADC0_init();
     uint16_t ADC0_Read(uint8_t channel);
     
-    void MT6701_Read();
+    void MT6701_Read(); //reading valve angle
     
-    void LM35_Read();
+    void LM35_Read(); //reading LM35 temperature
     
     void USART0_init();
     char USART0_readChar();
     void USART_printf(const char *format, ...);
     
     void Bluetooth_init(enable_state_t en);
-    void BLTReceiver();
-    void TimePassUpdate();
+    void BLTReceiver(); //bluetooth data receiving function
+    void TimePassUpdate(); //regular raport sending function
     
-    uint8_t crc8_cdma2000(uint8_t *data, uint8_t len);
-    bool verify_crc8_cdma2000(uint8_t *data, uint8_t len, uint8_t received_crc);
+    uint8_t crc8_cdma2000(uint8_t *data, uint8_t len); //calculate crc
     
-    void WorkingMode();
+    void WorkingMode();//define working mode acording pressed button
+    
+    void ReadAll(); //read data from eeprom
+    void SaveAll(); //write data to eeprom
     
 
 

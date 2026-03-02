@@ -22,7 +22,7 @@ Work_data WORK = {
     .Temp_deviation = 1, //5.0C
     .Close_angle_set_point = 90,
     .Open_angle_set_point = 180,
-    .Angle_deviation = 2, //5 degree
+    .Angle_deviation = 2, //2 degree
     .Valve_state = CLOSED //closed valve state
 };
 

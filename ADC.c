@@ -3,7 +3,6 @@
 void ADC0_init(){
 	ADC0.CTRLA = ADC_LOWLAT_bm;
 	ADC0.CTRLB = ADC_PRESC_DIV8_gc; // 20M / 64 = 312.5kHz ADC
-	//ADC0.CTRLC = (TIMEBASE_VALUE << ADC_TIMEBASE_gp) | ADC_REFSEL_VDD_gc; 
 	ADC0.CTRLE = 0; //128+0.5 ADC cycle
 	ADC0.CTRLF = ADC_SAMPNUM_NONE_gc; 
 	ADC0.COMMAND = ADC_MODE_SINGLE_12BIT_gc; 
@@ -14,10 +13,10 @@ void ADC0_init(){
 
 uint16_t ADC0_Read(uint8_t channel){
      if(channel == ANGLE_SENSOR_CHANNEL){
-        ADC0.CTRLC = (TIMEBASE_VALUE << ADC_TIMEBASE_gp) | ADC_REFSEL_VDD_gc;
+        ADC0.CTRLC = (TIMEBASE_VALUE << ADC_TIMEBASE_gp) | ADC_REFSEL_VDD_gc; //mt6701
     }
     else{
-        ADC0.CTRLC = (TIMEBASE_VALUE << ADC_TIMEBASE_gp) | ADC_REFSEL_4096MV_gc;
+        ADC0.CTRLC = (TIMEBASE_VALUE << ADC_TIMEBASE_gp) | ADC_REFSEL_4096MV_gc; //LM35
     }
 	ADC0.MUXPOS  = channel; //channel selection after change it will starting immediately
 	ADC0.COMMAND |= ADC_START_IMMEDIATE_gc; //start conversion

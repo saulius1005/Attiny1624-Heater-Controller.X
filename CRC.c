@@ -10,7 +10,3 @@ uint8_t crc8_cdma2000(uint8_t *data, uint8_t len){
 
     return crc;
 }
-
-bool verify_crc8_cdma2000(uint8_t *data, uint8_t len, uint8_t received_crc){
-    return crc8_cdma2000(data, len) == received_crc;
-}
