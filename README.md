@@ -48,7 +48,7 @@ Activated when button is pressed during power-up.
 
 ### Example Commands
 
-  - `DT14505A0B4A63`  Set configuration parameters
+  - `<DT14505A0B4A63>`  Set configuration parameters
 
 The example string `DT14505A0B4A63` is not a fixed command type, meaning its data fields can change depending on how we want the system to operate.
 
@@ -73,15 +73,15 @@ The structure is as follows:
 
 The CRC (CDMA-2000) is calculated using the ASCII representation of the command string, not the hexadecimal byte values. Other commands are of a fixed type, therefore their CRC never changes.
 
-  - `MESA2A`  Measure valve angle
+  - `<MESA2A>`  Measure valve angle
 
- - `REDT10`  Read temperatures
+ - `<REDT10>`  Read temperatures
 
- - `PTSTE8`  Pump toggle
+ - `<PTSTE8>`  Pump toggle
 
- - `SAVE02`  Save to EEPROM
+ - `<SAVE02>`  Save to EEPROM
 
- - `EXITC6`  Exit programming mode  
+ - `<EXITC6>`  Exit programming mode  
 
 ###  Regular Working Mode
 
