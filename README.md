@@ -1,5 +1,8 @@
 # Heating Valve Controller (ATtiny1624)
 
+<img src="https://github.com/user-attachments/assets/0ac04ef5-8807-42a1-8004-707c2818bc5b" width="50%"/><img src="https://github.com/user-attachments/assets/9d519576-e604-4d47-82fa-b55e61804939" width="50%"/>
+<img src="https://github.com/user-attachments/assets/173838d6-8aec-42bc-8077-2eed35edfb0e" width="50%"/><img src="https://github.com/user-attachments/assets/d3420948-c336-44d4-9218-1dda9c8412e3" width="50%"/>
+
 Embedded firmware for an AVR microcontroller–based heating system controller.  
 The system regulates room temperature by controlling a motorized valve using a stepper motor, based on:
 
@@ -10,7 +13,7 @@ The system regulates room temperature by controlling a motorized valve using a s
     
 The controller supports both **automatic operating mode** and **Bluetooth programming mode** with CRC-validated commands.
 
-## Hardware Modules
+## Hardware
 
 -   ATtiny1624 microcontroller
     
@@ -26,7 +29,11 @@ The controller supports both **automatic operating mode** and **Bluetooth progra
     
 -   User button (programming mode trigger)
 
-
+  
+###  Wiring diagram
+<p align="center">
+<img src="https://github.com/user-attachments/assets/89bff817-1c4d-4e77-ac0f-cdc4fb8be970" width="50%" align="center"/>
+</p>
 
 ## Operating Modes
 
