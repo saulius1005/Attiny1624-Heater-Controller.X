@@ -48,10 +48,6 @@ Activated when button is pressed during power-up.
 
 ### Example Commands
 
-Command
-
-Description
-
   - `DT14505A0B4A63`  Set configuration parameters
 
 The example string `DT14505A0B4A63` is not a fixed command type, meaning its data fields can change depending on how we want the system to operate.
