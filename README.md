@@ -1,4 +1,4 @@
-# Heating Valve Controller (AVR)
+# Heating Valve Controller (ATtiny1624)
 
 Embedded firmware for an AVR microcontroller–based heating system controller.  
 The system regulates room temperature by controlling a motorized valve using a stepper motor, based on:
